@@ -1,0 +1,38 @@
+// TYPE
+$bodyFont: 'Raleway', sans-serif;
+$displayFont: 'Inconsolata', monospace;
+
+// calc(1.6rem + (20 - 1.6) * ((100vw - 300px) / (1600 - 300)));
+
+// LAYOUT
+html {
+  font-size: 62.5%; // 10px
+}
+
+.wrapper {
+  // margin: 1rem auto;
+  max-width: 1600px;
+  min-height: 95vh;
+  min-width: 300px;
+  // padding: 1rem;
+  // text-align: center;
+  width: 95vw;
+}
+
+button {
+  border: none;
+}
+
+textarea {
+  resize: none;
+  // width: 100%;
+  padding: 1rem;
+}
+
+ul {
+  list-style: inside none;
+  padding-left: 0;
+  li {
+    display: inline-block;
+  }
+}
