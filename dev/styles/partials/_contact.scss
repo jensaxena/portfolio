@@ -1,36 +1,41 @@
 // CONTACT
-.section__content {
-  text-align: left;
-}
-
 form {
   @include flex-y;
   width: 50%;
   button {
+    align-self: flex-start;
     background: $gre;
     margin: 0;
   }
 }
 
+form, input, textarea {
+  margin-bottom: 2.5rem;
+}
+
 input { height: 3rem; }
 
-input,
-textarea {
-  color: $gre;
-  margin: 0 2.5rem 2.5rem 0;
+input, textarea {
   padding: 1rem;
   resize: none;
 }
 
-::-moz-placeholder {
-  color: $gre;
-  opacity: 1;
-}// Firefox 19+
+.aside__contact {
+  @include flex-x;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
-:-moz-placeholder { color: $gre; }// Firefox 18-
+.contact__div {
+  padding-left: 2.5rem;
+}
 
-:-ms-input-placeholder { color: $gre; }//  IE 10+
+.contact__div:not(:nth-of-type(3)) {
+  width: 50%;
+}
 
-::-webkit-input-placeholder { color: $gre; }// Chrome/Opera/Safari
-
-a, p { color: $gr3; }
+.contact__ul--social {
+  li {
+    display: inline-block;
+  }
+}
