@@ -27,3 +27,31 @@ $whi: rgb(255, 255, 255);
 .gr2 { color: rgb(172, 172, 172); }
 .gr1 { color: rgb(241, 241, 241); }
 .whi { color: rgb(255, 255, 255); }
+
+a, body, button, p { color: $whi; }
+
+body { background: $gr5; }
+
+button { background: $ora; }
+
+h2 { color: $ora; }
+
+h3, input, textarea, .sub-head { color: $gre; }
+
+.header__div--logo {
+  background: $gr5;
+  border: 1px solid $whi;
+}
+
+.contact__div {  a, p { color: $gr3; } }
+
+::-moz-placeholder {
+  color: $gre;
+  opacity: 1;
+}// Firefox 19+
+
+:-moz-placeholder { color: $gre; }// Firefox 18-
+
+:-ms-input-placeholder { color: $gre; }//  IE 10+
+
+::-webkit-input-placeholder { color: $gre; }// Chrome/Opera/Safari
