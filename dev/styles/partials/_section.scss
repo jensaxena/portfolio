@@ -1,0 +1,24 @@
+// SECTION
+section {
+  @include flex-y;
+  align-items: center;
+  display: block;
+  height: 100vh;
+  justify-content: center;
+  padding-top: calc(60px + 30px);
+}
+
+section:not(.section__home) {
+  text-align: center;
+}
+
+// HOME
+.home__div--half:nth-of-type(2) {
+  background: linear-gradient(to bottom, rgba(37, 37, 37, 0),rgba(37, 37, 37, 1)), url(/public/assets/images/wallpaper.jpg);
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}

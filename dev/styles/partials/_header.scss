@@ -1,8 +1,25 @@
-.header__img--logo {
+// HEADER
+.header__div--logo {
+  @include flex-x;
+  @include flex-centre;
+  background: $gr4;
   border: 1px solid $whi;
+  height: 60px;
+  left: 5%;
+  width: 60px;
+  img {
+    height: 50px;
+  }
+}
+
+.header__div--logo,
+.header__img--menu-collapse {
+  position: fixed;
+  z-index: 1;
 }
 
 .header__img--menu-collapse {
   height: 16px;
+  right: 5%;
   width: 36px;
 }

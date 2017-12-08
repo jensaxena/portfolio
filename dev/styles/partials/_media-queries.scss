@@ -1,0 +1,21 @@
+// MEDIA QUERIES
+@media screen and (max-width: 900px) {
+  h1, h2 {
+    letter-spacing: 0.2rem;
+    word-spacing: 0.01rem;
+  }
+
+  form,
+  .home__div--half:nth-of-type(2),
+  .wrapper {
+    width: 100%;
+  }
+
+  .header__div--logo {
+    left: 0;
+  }
+
+  .header__img--menu-collapse {
+    right: 0;
+  }
+}

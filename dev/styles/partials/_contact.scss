@@ -1,0 +1,36 @@
+// CONTACT
+.section__content {
+  text-align: left;
+}
+
+form {
+  @include flex-y;
+  width: 50%;
+  button {
+    background: $gre;
+    margin: 0;
+  }
+}
+
+input { height: 3rem; }
+
+input,
+textarea {
+  color: $gre;
+  margin: 0 2.5rem 2.5rem 0;
+  padding: 1rem;
+  resize: none;
+}
+
+::-moz-placeholder {
+  color: $gre;
+  opacity: 1;
+}// Firefox 19+
+
+:-moz-placeholder { color: $gre; }// Firefox 18-
+
+:-ms-input-placeholder { color: $gre; }//  IE 10+
+
+::-webkit-input-placeholder { color: $gre; }// Chrome/Opera/Safari
+
+a, p { color: $gr3; }
