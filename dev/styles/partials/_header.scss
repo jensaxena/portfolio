@@ -1,9 +1,12 @@
 // HEADER
+header {
+  height: 60px;
+  position: relative;
+}
+
 .header__div--logo {
   @include flex-x;
   @include flex-centre;
-  background: $gr4;
-  border: 1px solid $whi;
   height: 60px;
   left: 5%;
   width: 60px;
