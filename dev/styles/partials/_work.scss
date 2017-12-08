@@ -1,0 +1,23 @@
+// WORK
+// .section__work {}
+.aside__work--tags {
+  display: block;
+  height: 100vh;
+  width: 20%;
+}
+
+// .section__content {
+//   flex-wrap: wrap;
+//   justify-content: flex-end;
+// }
+
+.work__div--gallery {
+  @include flex-x;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+figure {
+  margin: 1rem;
+  max-width: calc(40% - 2rem);
+}
