@@ -18,6 +18,12 @@ section:not(.section__home) {
 }
 
 // HOME
+.home__div--half {
+  @include flex-y;
+  height: 75vh;
+  justify-content: center;
+}
+
 .home__div--half:nth-of-type(2) {
   background: linear-gradient(to bottom, rgba(37, 37, 37, 0),rgba(37, 37, 37, 1)), url(/public/assets/images/wallpaper.jpg);
   height: 100vh;

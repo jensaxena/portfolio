@@ -2,14 +2,14 @@
 $bodyFont: 'Inconsolata', monospace;
 $displayFont: 'Playfair Display SC', serif;
 
-$body1: calc(1.4rem + (18 - 1.4) * ((100vw - 320px) / (1920 - 320)));
-$body2: calc(1.2rem + (14 - 1.2) * ((100vw - 320px) / (1920 - 320)));
+$body1: calc(1.4rem + (1.8 - 1.4) * ((100vw - 320px) / (1920 - 320)));
+$body2: calc(1.2rem + (1.4 - 1.2) * ((100vw - 320px) / (1920 - 320)));
 
-$copy1: calc(0.9rem + (12 - 0.9) * ((100vw - 320px) / (1920 - 320)));
+$copy1: calc(0.9rem + (1.2 - 0.9) * ((100vw - 320px) / (1920 - 320)));
 
-$head1: calc(2rem + (35 - 2) * ((100vw - 320px) / (1920 - 320)));
-$head2: calc(3rem + (55 - 3) * ((100vw - 320px) / (1920 - 320)));
-$head3: calc(1.5rem + (25 - 1.5) * ((100vw - 320px) / (1920 - 320)));
+$head1: calc(2rem + (3.5 - 2) * ((100vw - 320px) / (1920 - 320)));
+$head2: calc(3rem + (5.5 - 3) * ((100vw - 320px) / (1920 - 320)));
+$head3: calc(1.5rem + (2.5 - 1.5) * ((100vw - 320px) / (1920 - 320)));
 
 .bold { font-weight: 700; }
 
