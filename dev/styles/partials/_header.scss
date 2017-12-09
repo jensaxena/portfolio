@@ -1,11 +1,7 @@
 // HEADER
-header {
-  @include flex-x;
-  height: 60px;
-  justify-content: space-between;
-  left: 5%;
+.header__top {
+  left: 5vw;
   position: fixed;
-  right: 5%;
   z-index: 1;
 }
 
@@ -14,15 +10,9 @@ header {
   @include flex-centre;
   height: 60px;
   width: 60px;
-  img {
-    height: 50px;
-  }
-}
-
-.header__img--menu-collapse {
-  cursor: pointer;
-  height: 16px;
-  width: 36px;
+  // img {
+  //   height: 50px;
+  // }
 }
 
 // DROPDOWN MENU
@@ -55,4 +45,43 @@ header {
 }
 .nav__dropdown--link:last-child {
   padding-right: 0;
+}
+
+// SIDEBAR
+.nav__sidebar {
+  @include flex-y;
+  height: 100vh;
+  justify-content: flex-start;
+  position: fixed;
+  margin-left: 90vw;
+  ul {
+    margin-top: calc(50vh - 60px);
+    width: 5vw;
+  }
+}
+
+.nav__sidebar--menu-collapse {
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  margin-top: 4rem;
+  width: 5vw;
+}
+
+.nav__sidebar--link {
+  border: 1px solid $whi;
+  cursor: pointer;
+  height: 10px;
+  margin: 1rem 0;
+  position: relative;
+  a {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+  a::after {
+    color: $whi;
+    content: '';
+    position: absolute;
+  }
 }

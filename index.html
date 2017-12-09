@@ -30,6 +30,12 @@
 </head>
 <body>
 
+	<header class="header__top">
+		<a class="header__a--logo" href="#home">
+			<img src="/public/assets/images/logo-white-trace.svg" alt="" />
+		</a><!-- .header__a--logo -->
+	</header><!-- .header__top -->
+
 	<nav class="nav__dropdown visually-hidden" id="dropdown">
 		<div class="wrapper">
 			<h2 class="nav__dropdown--head">Jen Saxena</h2>
@@ -80,21 +86,34 @@
 					</a>
 				</li>
 			</ul><!-- .nav__dropdown--social -->
+
 			<p class="copyright">&copy; 2017
 				<a href="mailto:jen@jensaxena.com">
 					Jen Saxena
 				</a>
 				- all rights reserved.
 			</p><!-- .copyright -->
+
 		</div><!-- .wrapper -->
 	</nav><!-- .nav__dropdown #dropdown -->
 
-	<header class="wrapper">
-		<a class="header__a--logo" href="#home">
-			<img src="/public/assets/images/logo-white-trace.svg" alt="" />
-		</a><!-- .header__a--logo -->
-		<img class="header__img--menu-collapse" id="menu-collapse" src="/public/assets/menu-collapse.png" alt=""/>
-	</header><!-- .wrapper #header -->
+	<nav class="nav__sidebar">
+		<img class="nav__sidebar--menu-collapse" id="menu-collapse" src="/public/assets/menu-collapse.png" alt=""/>
+		<ul>
+			<li class="nav__sidebar--link current">
+				<a href="#"></a>
+			</li>
+			<li class="nav__sidebar--link">
+				<a href="#"></a>
+			</li>
+			<li class="nav__sidebar--link">
+				<a href="#"></a>
+			</li>
+			<li class="nav__sidebar--link">
+				<a href="#"></a>
+			</li>
+		</ul>
+	</nav><!-- .nav__sidebar -->
 
 	<main class="wrapper">
 
@@ -147,32 +166,32 @@
 				</h1>
 			</div><!-- .home__div--half -->
 			<div class="home__div--half">
-				<img src="" alt="">
+				<!-- background image here -->
 			</div><!-- .home__div--half -->
 		</section><!-- .section__home #home -->
 
 		<section class="section__about" id="about">
-			<div class="section__head">
+			<header class="section__head">
 				<h2>
 					<span class="gre">&#123; </span>
 					About Me
 					<span class="gre"> &#125;</span>
 					<span class="sub-head">Something about me goes here</span>
 				</h2>
-			</div><!-- .section__head -->
+			</header><!-- .section__head -->
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A corrupti iure beatae molestiae quo maiores impedit consequatur ipsum suscipit asperiores minus veritatis consectetur accusamus, voluptate libero, facere possimus aliquam ducimus.</p>
 			<button>Download Resume</button>
 			<!-- a bunch of devicons -->
 		</section><!-- .section__about #about -->
 
 		<section class="section__work" id="work">
-			<div class="section__head">
+			<header class="section__head">
 				<h2>
 					<span class="gre">&#123; </span>
 					My Work
 					<span class="gre"> &#125;</span>
 				</h2>
-			</div><!-- .section__head -->
+			</header><!-- .section__head -->
 
 			<div class="section__content">
 				<aside class="aside__work--tags">
@@ -205,21 +224,22 @@
 						</figcaption>
 					</figure>
 				</div><!-- work__div--gallery -->
-				<button>Show More</button>
+
+				<!-- <button>Show More</button> -->
 
 				</div><!-- section__content -->
 
 		</section><!-- .section__work #work -->
 
 		<section class="section__contact" id="contact">
-			<div class="section__head">
+			<header class="section__head">
 				<h2>
 					<span class="gre">&#123; </span>
 					Contact Me
 					<span class="gre"> &#125;</span>
 					<span class="sub-head">Get in touch!</span>
 				</h2>
-			</div><!-- .section__head -->
+			</header><!-- .section__head -->
 
 			<div class="section__content">
 				<form action="">
