@@ -1,23 +1,44 @@
 // TYPE
 $bodyFont: 'Inconsolata', monospace;
-$displayFont: 'Raleway', sans-serif;
+$displayFont: 'Playfair Display SC', serif;
 
 $body1: calc(1.4rem + (18 - 1.4) * ((100vw - 320px) / (1920 - 320)));
 $body2: calc(1.2rem + (14 - 1.2) * ((100vw - 320px) / (1920 - 320)));
 
-$head1: calc(2rem + (35 - 2) * ((100vw - 320px) / (1920 - 320)));
+$copy1: calc(0.9rem + (12 - 0.9) * ((100vw - 320px) / (1920 - 320)));
 
+$head1: calc(2rem + (35 - 2) * ((100vw - 320px) / (1920 - 320)));
 $head2: calc(3rem + (55 - 3) * ((100vw - 320px) / (1920 - 320)));
 $head3: calc(1.5rem + (25 - 1.5) * ((100vw - 320px) / (1920 - 320)));
 
 .bold { font-weight: 700; }
+
 .indent { padding-left: 2rem; }
+
+.copyright,
+.copyright a {
+  font-size: $copy1;
+  margin: 0;
+}
+
+.copyright a,
+.nav__dropdown--head,
+.nav__dropdown--menu { text-transform: uppercase; }
+
+.nav__dropdown--head {
+  font-family: $displayFont;
+  margin: 25vh auto 0;
+}
+
 .sub-head {
   margin-top: 2rem;
   display: block;
 }
 
-a { text-decoration: none; }
+a {
+  padding: 1rem;
+  text-decoration: none;
+}
 
 a, button, p { font-size: $body1; }
 

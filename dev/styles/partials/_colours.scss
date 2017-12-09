@@ -36,14 +36,27 @@ button { background: $ora; }
 
 h2 { color: $ora; }
 
-h3, input, textarea, .sub-head { color: $gre; }
+h3, input, textarea, .copyright a, .sub-head { color: $gre; }
 
-.header__div--logo {
+.header__a--logo {
   background: $gr5;
   border: 1px solid $whi;
 }
 
 .contact__div {  a, p { color: $gr3; } }
+
+
+.nav__dropdown { background: rgba(37, 37, 37, 0.9) }
+
+.nav__dropdown--head { color: $whi; }
+
+a:active,
+a:focus,
+a:hover {color: $gre; }
+
+.copyright a:active,
+.copyright a:focus,
+.copyright a:hover { color: $whi; }
 
 ::-moz-placeholder {
   color: $gre;

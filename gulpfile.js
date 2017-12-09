@@ -18,17 +18,17 @@ gulp.task('styles', () => {
 });
 
 gulp.task('js', () => {
-	return browserify('dev/scripts/app.js', {debug: true})
+	return browserify('dev/scripts/script.js', {debug: true})
 		.transform('babelify', {
 			sourceMaps: true,
-			presets: ['es2015','react']
+			presets: ['es2015', 'react']
 		})
 		.bundle()
 		.on('error',notify.onError({
 			message: "Error: <%= error.message %>",
 			title: 'Error in JS 💀'
 		}))
-		.pipe(source('app.js'))
+		.pipe(source('script.js'))
 		.pipe(buffer())
 		.pipe(gulp.dest('public/scripts'))
 		.pipe(reload({stream:true}));

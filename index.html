@@ -24,18 +24,77 @@
 	<meta name="msapplication-wide310x150logo" content="/public/assets/images/widetile.png" />
 	<meta name="msapplication-square310x310logo" content="/public/assets/images/largetile.png" />
 	<title>Jen Saxena | Art, Design, Development</title>
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display+SC:900" rel="stylesheet">
 	<script src="https://use.fontawesome.com/fafaa81dee.js"></script>
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 </head>
 <body>
 
+	<nav class="nav__dropdown visually-hidden" id="dropdown">
+		<div class="wrapper">
+			<h2 class="nav__dropdown--head">Jen Saxena</h2>
+			<ul class="nav__dropdown--menu">
+				<li>
+					<a class="nav__dropdown--link" href="#Home">Home</a>
+				</li><!-- .nav__dropdown--link -->
+				<li>
+					<a class="nav__dropdown--link" href="#About">About Me</a>
+				</li><!-- .nav__dropdown--link -->
+				<li>
+					<a class="nav__dropdown--link" href="#Work">My Work</a>
+				</li><!-- .nav__dropdown--link -->
+				<li>
+					<a class="nav__dropdown--link" href="#Contact">Contact Me</a>
+				</li><!-- .nav__dropdown--link -->
+			</ul>
+
+			<ul class="nav__dropdown--social">
+				<li>
+					<a href="https://codepen.io/jensaxena/">
+						<i class="fa fa-codepen fa-fw" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/jensaxena">
+						<i class="fa fa-github fa-fw" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/jensaxena/">
+						<i class="fa fa-instagram fa-fw" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/jensaxena/">
+						<i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://medium.com/@jensaxena/">
+						<i class="fa fa-medium fa-fw" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/jensaxena">
+						<i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul><!-- .nav__dropdown--social -->
+			<p class="copyright">&copy; 2017
+				<a href="mailto:jen@jensaxena.com">
+					Jen Saxena
+				</a>
+				- all rights reserved.
+			</p><!-- .copyright -->
+		</div><!-- .wrapper -->
+	</nav><!-- .nav__dropdown #dropdown -->
+
 	<header class="wrapper">
-		<div class="header__div--logo">
+		<a class="header__a--logo" href="#home">
 			<img src="/public/assets/images/logo-white-trace.svg" alt="" />
-		</div><!-- .header__div--logo -->
-		<img class="header__img--menu-collapse" src="/public/assets/menu-collapse.png" alt=""/>
-	</header><!-- .wrapper -->
+		</a><!-- .header__a--logo -->
+		<img class="header__img--menu-collapse" id="menu-collapse" src="/public/assets/menu-collapse.png" alt=""/>
+	</header><!-- .wrapper #header -->
 
 	<main class="wrapper">
 
@@ -239,6 +298,8 @@
 
 	</main><!-- .wrapper -->
 
-	<script src="/public/scripts/app.js"></script>
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+
+	<script src="/public/scripts/script.js"></script>
 </body>
 </html>
