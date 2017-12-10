@@ -3,9 +3,9 @@ section {
   @include flex-y;
   align-items: center;
   display: block;
-  min-height: 100vh;
+  height: 100vh;
   justify-content: center;
-  padding-top: calc(60px + 30px);
+  padding-top: 60px;
 }
 
 section:not(.section__home) {
@@ -32,4 +32,15 @@ section:not(.section__home) {
   right: 0;
   top: 0;
   z-index: -1;
+}
+
+// ABOUT
+.devicons {
+  li {
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem;
+  }
 }

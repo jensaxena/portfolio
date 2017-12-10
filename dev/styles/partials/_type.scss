@@ -13,6 +13,8 @@ $head3: calc(1.5rem + (2.5 - 1.5) * ((100vw - 320px) / (1920 - 320)));
 
 .bold { font-weight: 700; }
 
+.devicon, .contact__ul--social .fa { font-size: $head2; }
+
 .indent { padding-left: 2rem; }
 
 .copyright,

@@ -1,13 +1,16 @@
 // WORK
-.section__work .section__content {
+.section__work > .section__content {
   @include flex-x;
   justify-content: space-between;
 }
 
-.aside__work--tags {
-  // display: block;
-  // height: 90vh;
-  width: 20%;
+.aside__work {
+  margin: -0.75rem 1rem 0 0;
+  width: 30%;
+  ul { background: $whi; }
+  li { padding: 1rem; }
+  li:first-child { background: $gre; }
+  li:not(:first-child) { color: black; }
 }
 
 .work__div--gallery {
@@ -18,5 +21,6 @@
 
 figure {
   margin: 1rem;
+  margin-top: 0;
   max-width: calc(50% - 2rem);
 }
