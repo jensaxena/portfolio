@@ -18,8 +18,9 @@
 // DROPDOWN MENU
 .nav__dropdown {
   bottom: 0;
+  display: none;
   left: 0;
-  position: absolute;
+  position: fixed;
   right: 0;
   text-align: center;
   top: 0;
@@ -69,6 +70,7 @@
 }
 
 .nav__sidebar--link {
+  background: $whi;
   border: 1px solid $whi;
   cursor: pointer;
   height: 10px;
@@ -76,12 +78,12 @@
   position: relative;
   a {
     display: block;
+    height: 100%;
     padding: 0;
     width: 100%;
   }
-  a::after {
-    color: $whi;
-    content: '';
-    position: absolute;
-  }
+}
+
+.nav__sidebar--active {
+  background: none;
 }

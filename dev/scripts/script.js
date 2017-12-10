@@ -1,20 +1,32 @@
 // NAMESPACE
 const folio = {};
 
-folio.action = function() {
-
+// NAVIGATION FUNCTIONS
+folio.fade = function() {
   $('#menu-collapse').on('click', function() {
-    $('#dropdown').toggleClass('visually-hidden');
-  });
+    $('#dropdown').fadeToggle(900);
+  })
+};
 
-  $('#menu-collapse').on('focus', function() {
-    $('#dropdown').toggleClass('visually-hidden');
-  });
-}
+folio.scroller = function() {
+  $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    folio.section = $(this.getAttribute('href'));
+
+    $('html').stop().animate({scrollTop: folio.section.offset().top}, 1000);
+    $('#dropdown').fadeOut(900);
+
+    $('.nav__sidebar--link').removeClass('nav__sidebar--active');
+    $(`#${folio.section[0].id}--active`).addClass('nav__sidebar--active');
+  })
+};
+
+// TO DO: EMAIL FORM ON SUBMIT FUNCTIONS
 
 // FIRE AT WILL
 folio.init = function() {
-  folio.action();
+  folio.fade();
+  folio.scroller();
 };
 
 // DOCUMENT READY
