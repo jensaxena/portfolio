@@ -25,6 +25,7 @@
 	<meta name="msapplication-square310x310logo" content="/public/assets/images/largetile.png" />
 	<title>Jen Saxena | Art, Design, Development</title>
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display+SC:900" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<script src="https://use.fontawesome.com/fafaa81dee.js"></script>
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 </head>
@@ -180,8 +181,30 @@
 				</h2>
 			</header><!-- .section__head -->
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A corrupti iure beatae molestiae quo maiores impedit consequatur ipsum suscipit asperiores minus veritatis consectetur accusamus, voluptate libero, facere possimus aliquam ducimus.</p>
-			<button>Download Resume</button>
-			<!-- a bunch of devicons -->
+			<!-- coming soon:  -->
+			<button>Download Resume (coming soon)</button>
+
+			<p>These are a few of my favourite things:</p>
+			<ul class="devicons">
+				<li><i class="devicon devicon-gulp-plain colored"></i></li>
+				<li><i class="devicon devicon-chrome-plain colored"></i></li>
+				<li><i class="devicon devicon-ubuntu-plain colored"></i></li>
+				<li><i class="devicon devicon-html5-plain colored"></i></li>
+				<li><i class="devicon devicon-git-plain colored"></i></li>
+				<li><i class="devicon devicon-firefox-plain colored"></i></li>
+				<li><i class="devicon devicon-illustrator-plain colored"></i></li>
+				<li><i class="devicon devicon-javascript-plain colored"></i></li>
+				<li><i class="devicon devicon-react-original colored"></i></li>
+				<li><i class="devicon devicon-photoshop-plain colored"></i></li>
+				<li><i class="devicon devicon-css3-plain colored"></i></li>
+				<li><i class="devicon devicon-jquery-plain colored"></i></li>
+				<li><i class="devicon devicon-visualstudio-plain colored"></i></li>
+				<li><i class="devicon devicon-sass-original colored"></i></li>
+				<li><i class="devicon devicon-gimp-plain colored"></i></li>
+				<li><i class="devicon devicon-github-plain colored"></i></li>
+				<li><i class="devicon devicon-linux-plain colored"></i></li>
+				<li><i class="devicon devicon-inkscape-plain colored"></i></li>
+			</ul><!-- .devicons -->
 		</section><!-- .section__about #about -->
 
 		<section class="section__work" id="work">
@@ -194,13 +217,13 @@
 			</header><!-- .section__head -->
 
 			<div class="section__content">
-				<aside class="aside__work--tags">
+				<aside class="aside__work">
 					<ul>
 						<li>tag1</li>
 						<li>tag2</li>
 						<li>tag3</li>
 					</ul>
-				</aside><!-- aside__work--tags -->
+				</aside><!-- aside__work -->
 
 				<div class="work__div--gallery">
 					<figure>
@@ -224,10 +247,9 @@
 						</figcaption>
 					</figure>
 				</div><!-- work__div--gallery -->
+			</div><!-- section__content -->
 
-				<!-- <button>Show More</button> -->
-
-				</div><!-- section__content -->
+			<button>Show More (coming soon)</button>
 
 		</section><!-- .section__work #work -->
 
@@ -242,11 +264,15 @@
 			</header><!-- .section__head -->
 
 			<div class="section__content">
-				<form action="">
+				<form action="mailto:jen@jensaxena.com" id="contactMe" method="">
+					<label for="name" class="visually-hidden">Enter your name</label>
 					<input type="text" name="name" id="name" placeholder="_NAME*">
+					<label for="email" class="visually-hidden">Enter your email address</label>
 					<input type="email" name="email" id="email" placeholder="_EMAIL*">
-					<textarea name="message" id="message" cols="30" rows="10" placeholder="_MESSAGE*"></textarea>
-					<button type="submit">Send Mail</button>
+					<label for="message" class="visually-hidden">Enter a message here</label>
+					<textarea name="message" id="message" cols="50" rows="10" placeholder="_MESSAGE*"></textarea>
+					<label for="name" class="visually-hidden">Send your email</label>
+					<button type="submit" name="submit" id="submit">Send Mail</button>
 				</form>
 
 				<aside class="aside__contact">
@@ -265,7 +291,9 @@
 						<h3>Quick Links</h3>
 						<ul>
 							<li>
-								<a href="tel:14165274516">1 416 527 4516</a>
+								<a href="tel:14165274516">
+									<i class="fa fa-phone fa-fw" aria-hidden="true"></i>
+									1 416 527 4516</a>
 							</li>
 							<li>
 								<a href="mailto:jen@jensaxena.com">
