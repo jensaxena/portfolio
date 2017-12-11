@@ -38,6 +38,10 @@ h2 { color: $ora; }
 
 h3, input, textarea, .copyright a, .sub-head { color: $gre; }
 
+figcaption .fa {
+  color: $whi;
+}
+
 .header__a--logo {
   background: $gr5;
   border: 1px solid $whi;

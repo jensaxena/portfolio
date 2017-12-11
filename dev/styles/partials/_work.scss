@@ -5,22 +5,68 @@
 }
 
 .aside__work {
+  color: black;
+  margin-right: 1rem;
   margin-top: -0.75rem;
-  width: 33%;
+  width: calc(20% - 1rem);
   ul { background: $whi; }
   li { padding: 1rem; }
-  li:first-child { background: $gre; }
-  li:not(:first-child) { color: black; }
+}
+
+.aside__work--tags li {
+  padding: 0.25rem 1rem;
+}
+
+.aside__work--title {
+  background: $gre;
+  color: $whi;
+}
+
+.aside__work--link a {
+  color: $blu;
+  padding: 0;
+}
+
+.aside__work--link a:focus
+.aside__work--link a:hover {
+  color: $gre;
 }
 
 .work__div--gallery {
   @include flex-x;
   flex-wrap: wrap;
   justify-content: flex-end;
+  width: 75%;
 }
 
 figure {
   margin: 1rem;
   margin-top: 0;
-  max-width: calc(40% - 2rem);
+  max-width: calc(50% - 2rem);
+  position: relative;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+figcaption {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+figure:focus, figure:hover figcaption {
+  @include flex-y;
+  align-items: center;
+  border-bottom: 10px solid $gr1;
+  border-left: 2.5px solid $gr1;
+  border-right: 2.5px solid $gr1;
+  border-top: 5px solid $gr1;
+  background: rgba(20, 20, 20, 0.8);
+  justify-content: center;
 }

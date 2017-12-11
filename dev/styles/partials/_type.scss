@@ -11,6 +11,12 @@ $head1: calc(2rem + (3.5 - 2) * ((100vw - 320px) / (1920 - 320)));
 $head2: calc(3rem + (5.5 - 3) * ((100vw - 320px) / (1920 - 320)));
 $head3: calc(1.5rem + (2.5 - 1.5) * ((100vw - 320px) / (1920 - 320)));
 
+body {
+  font-family: $bodyFont;
+  font-size: $body1;
+}
+
+.aside__work { font-size: $body2; }
 .bold { font-weight: 700; }
 
 .devicon, .contact__ul--social .fa { font-size: $head2; }
@@ -44,8 +50,6 @@ a {
 
 a, button, p { font-size: $body1; }
 
-a, button, h1, h2, h3, p, .sub-head { font-family: $bodyFont; }
-
 h1 { font-size: $head1; }
 
 h1, h2 {
@@ -60,3 +64,7 @@ h2 { font-size: $head2; }
 h3 { margin-top: 0; }
 
 h3, .sub-head { font-size: $head3; }
+
+figcaption .fa {
+  font-size: 4rem;
+}
