@@ -5,8 +5,8 @@
 }
 
 .aside__work {
-  margin: -0.75rem 1rem 0 0;
-  width: 30%;
+  margin-top: -0.75rem;
+  width: 33%;
   ul { background: $whi; }
   li { padding: 1rem; }
   li:first-child { background: $gre; }
@@ -22,5 +22,5 @@
 figure {
   margin: 1rem;
   margin-top: 0;
-  max-width: calc(50% - 2rem);
+  max-width: calc(40% - 2rem);
 }
