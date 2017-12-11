@@ -5,8 +5,23 @@
     word-spacing: 0.01rem;
   }
 
-  // form,
-  // .home__div--half:nth-of-type(2) {
-  //   width: 90vw;
-  // }
+  section { min-height: auto; }
+
+  .section__work > .section__content,
+  .section__contact > .section__content {
+    @include flex-y;
+  }
+
+  .aside__contact,
+  .aside__work,
+  .work__div--gallery,
+  form { width: 95%; }
+
+  .aside__contact { justify-content: space-between; }
+
+  .contact__div { padding-left: 0; }
+
+  .home__div--half { height: auto; }
+
+  .nav__dropdown--menu { max-width: 95%; }
 }
