@@ -10,6 +10,10 @@
     width: 100%;
   }
 
+  .about__div--edu {
+    display: block;
+  }
+
   .contact__div {
     padding-left: 0;
   }
@@ -30,11 +34,24 @@
   }
 
   figure {
-    width: 90%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .header__top {
+    height: 70px;
+    background: $gr5;
+    margin-top: -15px;
+    padding: 5px 0;
+  }
+
+  .nav__dropdown--menu {
+    max-width: 75%;
   }
 
   section {
-    margin: 0 auto;
-    width: 60vw;
+    margin: 0;
+    width: 75vw;
+    text-align: left;
   }
 }

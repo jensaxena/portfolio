@@ -20,6 +20,12 @@ button {
   padding: 1rem 4rem;
 }
 
+button:active,
+button:focus,
+button:hover {
+  box-shadow: 2px -1px 0 black, -2px -1px 0 black, -2px 3px 0 black, 2px 3px 0 black;
+}
+
 html { font-size: 62.5%; } // 10px
 
 ul {

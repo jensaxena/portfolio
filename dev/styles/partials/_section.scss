@@ -38,6 +38,16 @@ section:not(.section__home) {
   margin: 3rem auto;
 }
 
+.about__div--edu {
+  @include flex-x;
+  justify-content: space-between;
+}
+
+.about__ul {
+  margin: 0 2rem 3rem 0;
+  text-align: left;
+}
+
 .devicons li {
   background: rgba(255,255,255,0.1);
   border-radius: 5px;

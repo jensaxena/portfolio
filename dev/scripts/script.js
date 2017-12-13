@@ -38,7 +38,6 @@ folio.projects = {
 
 // RETURN TO TOP ON REFRESH
 folio.goBack = function() {
-  // TO DO: ANIMATE OR FIND BETTER SOLUTION TO AVOID WHITE FLASH
   $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
   });
@@ -109,14 +108,14 @@ folio.work = function() {
     $('#work-tags').html(folio.project.tags);
     $('#work-link').html(`<a href="${folio.project.link}">Go to project site!</a>`);
 
-    $('html, body').stop().animate({scrollTop:$('#work-title').offset().top}, 1000)
+    $('html, body').stop().animate({scrollTop:$('#work').offset().top}, 1000)
+
   });
 };
 
-// TO DO: EMAIL FORM ON SUBMIT FUNCTIONS
+// EMAIL FORM ON SUBMIT
 folio.form = function() {
-  $('form').on('submit', function(e) {
-    e.preventDefault();
+  $('form').on('submit', function() {
     $('#send-mail').text(`Thanks!`);
   });
 };
@@ -125,8 +124,8 @@ folio.form = function() {
 folio.init = function() {
   folio.dropdown();
   folio.goBack();
-  folio.scrollTo();
   folio.scrolling();
+  folio.scrollTo();
   folio.work();
 };
 
