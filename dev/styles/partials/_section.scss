@@ -1,10 +1,9 @@
 // SECTION
 section {
   @include flex-y;
-  align-items: center;
+  @include flex-centre;
   display: block;
   min-height: 100vh;
-  justify-content: center;
   padding-top: 60px;
 }
 
@@ -25,22 +24,73 @@ section:not(.section__home) {
 }
 
 .home__div--half:nth-of-type(2) {
-  background: linear-gradient(to bottom, rgba(37, 37, 37, 0),rgba(37, 37, 37, 1)), url(/public/assets/images/wallpaper.jpg);
+  background: linear-gradient(to bottom, rgba(37, 37, 37, 0),rgba(37, 37, 37, 1)), url(/public/images/wallpaper.jpg) center center;
   height: 100vh;
-  width: 50vw;
   position: absolute;
   right: 0;
   top: 0;
+  width: 50vw;
   z-index: -1;
 }
 
 // ABOUT
-.devicons {
-  li {
-    background: rgba(255,255,255,0.1);
-    border-radius: 5px;
-    display: inline-block;
-    margin: 1rem;
-    padding: 0.5rem;
+.about__p {
+  margin: 3rem auto;
+}
+
+.devicons li {
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+// WORK
+.section__work > .section__content {
+  @include flex-x;
+  justify-content: space-between;
+}
+
+.aside__work {
+  margin: -0.75rem 0 1rem;
+  margin-top: -0.75rem;
+  width: calc(20% - 1rem);
+  li { padding: 1rem; }
+}
+
+.aside__work--tags li { padding: 0.25rem 1rem; }
+
+.aside__work--link a { padding: 0; }
+
+.work__div--gallery {
+  width: 75%;
+}
+
+figure {
+  float: left;
+  margin: 0 1rem 3rem;
+  width: calc(50% - 2rem);
+  position: relative;
+  img {
+    display: block;
+    width: 100%;
   }
+}
+
+figcaption {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+figure:active figcaption,
+figure:focus figcaption,
+figure:hover figcaption  {
+  @include flex-y;
+  @include flex-centre;
 }

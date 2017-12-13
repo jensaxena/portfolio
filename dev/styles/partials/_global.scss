@@ -14,26 +14,23 @@
   justify-content: center;
 }
 
-html { font-size: 62.5%; } // 10px
-
-body { margin-top: -1px; }
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 1170px;
-  min-width: 320px;
-  width: 75vw;
-}
-
 button {
   border: none;
   margin: 0 auto;
   padding: 1rem 4rem;
 }
 
-img { width: 100%; }
+html { font-size: 62.5%; } // 10px
 
 ul {
   list-style: inside none;
   padding-left: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+  min-width: 300px;
+  padding-left: 10px;
+  width: 75vw;
 }

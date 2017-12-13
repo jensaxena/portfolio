@@ -1,18 +1,55 @@
 // HEADER
 .header__top {
-  left: 5vw;
+  height: 60px;
   position: fixed;
+  width: 100vw;
   z-index: 1;
 }
 
 .header__a--logo {
-  @include flex-x;
-  @include flex-centre;
+  display: inline-block;
   height: 60px;
+  left: 5px;
+  padding: 4px;
+  position: absolute;
+  text-align: center;
   width: 60px;
-  // img {
-  //   height: 50px;
-  // }
+  img {
+    height: 50px;
+  }
+}
+
+// SIDEBAR
+.nav__sidebar {
+  top: 45vh;
+  right: 20px;
+  width: 30px;
+  z-index: 1;
+  position: absolute;
+  ul {
+    width: 100%;
+  }
+}
+
+.nav__sidebar--link {
+  cursor: pointer;
+  height: 10px;
+  margin: 1rem 0;
+  a {
+    display: block;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.nav__dropdown--menu-collapse {
+  color: $whi;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  z-index: 1;
 }
 
 // DROPDOWN MENU
@@ -26,16 +63,20 @@
   top: 0;
 }
 
-.nav__dropdown--menu { max-width: 60%; }
+.nav__dropdown--menu {
+  max-width: 60%;
+}
 
 .nav__dropdown--menu,
 .nav__dropdown--social {
   @include flex-x;
   justify-content: space-between;
-  margin: 7.5rem auto;
+  margin: 10vh auto;
 }
 
-.nav__dropdown--social  { max-width: 40%; }
+.nav__dropdown--social  {
+  max-width: 40%;
+}
 
 .nav__dropdown--link {
   display: inline-block;
@@ -44,46 +85,7 @@
 .nav__dropdown--link:first-child {
   padding-left: 0;
 }
+
 .nav__dropdown--link:last-child {
   padding-right: 0;
-}
-
-// SIDEBAR
-.nav__sidebar {
-  @include flex-y;
-  height: 100vh;
-  justify-content: flex-start;
-  position: fixed;
-  margin-left: 90vw;
-  ul {
-    margin-top: calc(50vh - 60px);
-    width: 5vw;
-  }
-}
-
-.nav__sidebar--menu-collapse {
-  cursor: pointer;
-  display: block;
-  height: 20px;
-  margin-top: 4rem;
-  width: 5vw;
-}
-
-.nav__sidebar--link {
-  background: $whi;
-  border: 1px solid $whi;
-  cursor: pointer;
-  height: 10px;
-  margin: 1rem 0;
-  position: relative;
-  a {
-    display: block;
-    height: 100%;
-    padding: 0;
-    width: 100%;
-  }
-}
-
-.nav__sidebar--active {
-  background: none;
 }

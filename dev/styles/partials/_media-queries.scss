@@ -1,27 +1,40 @@
 // MEDIA QUERIES
 @media screen and (max-width: 900px) {
-  h1, h2 {
-    letter-spacing: 0.2rem;
-    word-spacing: 0.01rem;
+  section {
+    min-height: auto;
   }
 
-  section { min-height: auto; }
+  form,
+  .aside__work,
+  .work__div--gallery {
+    width: 100%;
+  }
+
+  .contact__div {
+    padding-left: 0;
+  }
+
+  .home__div--half {
+    height: auto;
+  }
 
   .section__work > .section__content,
   .section__contact > .section__content {
     @include flex-y;
   }
+}
 
-  .aside__contact,
-  .aside__work,
-  .work__div--gallery,
-  form { width: 95%; }
+@media screen and (max-width: 414px) {
+  button {
+    width: 100%;
+  }
 
-  .aside__contact { justify-content: space-between; }
+  figure {
+    width: 90%;
+  }
 
-  .contact__div { padding-left: 0; }
-
-  .home__div--half { height: auto; }
-
-  .nav__dropdown--menu { max-width: 95%; }
+  section {
+    margin: 0 auto;
+    width: 60vw;
+  }
 }

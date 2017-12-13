@@ -7,21 +7,87 @@ $body2: calc(1.2rem + (1.4 - 1.2) * ((100vw - 320px) / (1920 - 320)));
 
 $copy1: calc(0.9rem + (1.2 - 0.9) * ((100vw - 320px) / (1920 - 320)));
 
-$head1: calc(1.5rem + (3.5 - 1.5) * ((100vw - 320px) / (1920 - 320)));
-$head2: calc(2.5rem + (5.5 - 2.5) * ((100vw - 320px) / (1920 - 320)));
+$head1: calc(1.42rem + (3.5 - 1.42) * ((100vw - 320px) / (1920 - 320)));
+$head2: calc(2.3rem + (5.5 - 2.3) * ((100vw - 320px) / (1920 - 320)));
 $head3: calc(1.5rem + (2.5 - 1.5) * ((100vw - 320px) / (1920 - 320)));
+
+
+a {
+  padding: 1rem;
+  text-decoration: none;
+}
+
+a,
+button,
+p {
+  font-size: $body1;
+  line-height: 1.5;
+}
 
 body {
   font-family: $bodyFont;
   font-size: $body1;
 }
 
-.aside__work { font-size: $body2; }
-.bold { font-weight: 700; }
+h1 {
+  font-size: $head1;
+}
 
-.devicon, .contact__ul--social .fa { font-size: $head2; }
+h1,
+h2 {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
 
-.indent { padding-left: 2rem; }
+h1,
+h2,
+h3,
+.sub-head {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: $head2;
+}
+
+h3,
+.sub-head {
+  display: block;
+  font-size: $head3;
+  margin: 2rem auto;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+figcaption .fa {
+  font-size: 4rem;
+}
+
+.aside__work {
+  font-size: $body2;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.contact__ul--social .fa {
+  font-size: $head3;
+}
+
+.devicon {
+  font-size: $head2;
+}
+
+.nav__dropdown--menu-collapse {
+  font-size: 3.2rem;
+}
+
+.indent {
+  padding-left: 2rem;
+}
 
 .copyright,
 .copyright a {
@@ -31,40 +97,11 @@ body {
 
 .copyright a,
 .nav__dropdown--head,
-.nav__dropdown--menu { text-transform: uppercase; }
+.nav__dropdown--menu {
+  text-transform: uppercase;
+}
 
 .nav__dropdown--head {
   font-family: $displayFont;
   margin: 25vh auto 0;
-}
-
-.sub-head {
-  margin-top: 2rem;
-  display: block;
-}
-
-a {
-  padding: 1rem;
-  text-decoration: none;
-}
-
-a, button, p { font-size: $body1; }
-
-h1 { font-size: $head1; }
-
-h1, h2 {
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-}
-
-h1, h2, h3, .sub-head { font-weight: 400; }
-
-h2 { font-size: $head2; }
-
-h3 { margin-top: 0; }
-
-h3, .sub-head { font-size: $head3; }
-
-figcaption .fa {
-  font-size: 4rem;
 }

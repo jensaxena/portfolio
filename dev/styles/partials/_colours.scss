@@ -28,39 +28,69 @@ $whi: rgb(255, 255, 255);
 .gr1 { color: rgb(241, 241, 241); }
 .whi { color: rgb(255, 255, 255); }
 
-a, body, button, p { color: $whi; }
+a,
+button,
+figcaption .fa,
+p,
+.aside__work--title,
+.copyright a:active,
+.copyright a:focus,
+.copyright a:hover,
+.nav__dropdown--head { color: $whi; }
 
-body { background: $gr5; }
+body, .header__a--logo { background: $gr5; }
 
 button { background: $ora; }
 
-h2 { color: $ora; }
-
-h3, input, textarea, .copyright a, .sub-head { color: $gre; }
-
-figcaption .fa {
-  color: $whi;
+figure:active figcaption,
+figure:focus figcaption,
+figure:hover figcaption {
+  border-bottom: 10px solid $gr1;
+  border-left: 2.5px solid $gr1;
+  border-right: 2.5px solid $gr1;
+  border-top: 5px solid $gr1;
+  background: rgba(20, 20, 20, 0.8);
 }
 
-.header__a--logo {
+form button,
+.aside__work--title { background: $gre; }
+
+h2 { color: $ora; }
+
+a:active,
+a:focus,
+a:hover,
+h3,
+input,
+textarea,
+.aside__work--link a:active,
+.aside__work--link a:focus,
+.aside__work--link a:hover,
+.copyright a,
+.sub-head { color: $gre; }
+
+.aside__work { color: black;}
+
+.aside__work ul { background: $whi; }
+
+.aside__work--link a { color: $blu; }
+
+.contact__div {  a, p { color: $gr3; } }
+
+.nav__sidebar--link {
+  background: $whi;
+  border: 1px solid $gr5;
+}
+
+.nav__sidebar--active {
   background: $gr5;
   border: 1px solid $whi;
 }
 
-.contact__div {  a, p { color: $gr3; } }
+.header__a--logo { border: 1px solid $whi; }
 
 
 .nav__dropdown { background: rgba(37, 37, 37, 0.9) }
-
-.nav__dropdown--head { color: $whi; }
-
-a:active,
-a:focus,
-a:hover {color: $gre; }
-
-.copyright a:active,
-.copyright a:focus,
-.copyright a:hover { color: $whi; }
 
 ::-moz-placeholder {
   color: $gre;
