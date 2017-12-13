@@ -49,27 +49,36 @@ folio.fade = function() {
   $('#dropdown').fadeToggle(900);
 };
 
+folio.menu = function() {
+  if ($('#menu-collapse').hasClass('fa-bars')) {
+    $('#menu-collapse').removeClass('fa-bars');
+    $('#menu-collapse').addClass('fa-times');
+  } else {
+    $('#menu-collapse').addClass('fa-bars');
+    $('#menu-collapse').removeClass('fa-times');
+  }
+};
+
 // DO FADE ON MENU ICON CLICK
 folio.dropdown = function() {
   $('#menu-collapse').on('click', function() {
     folio.fade();
+    folio.menu();
   });
 };
 
 // CHANGE SIDEBAR LOCATION INDICATOR
 folio.scrolling = function() {
 
-  // GET PAGE LOCATION
   $(window).scroll(function() {
     folio.location = $(this).scrollTop();
 
-    // GET SECTION AT LOCATION
     $('section').each(function() {
       folio.target = $(this).offset().top;
       folio.targetID = $(this).attr('id');
 
       // UPDATE CURRENT LOCATION
-      if (folio.location >= folio.target) {
+      if (folio.location + 1 >= folio.target) {
         $('.nav__sidebar--link').removeClass('nav__sidebar--active');
         $(`#${folio.targetID}--active`).addClass('nav__sidebar--active');
       };
@@ -93,23 +102,24 @@ folio.scrollTo = function() {
 
 folio.work = function() {
   $('figure').on('click', function() {
-    // folio.projectID = ;
     folio.project = folio.projects[$(this).attr('id')];
 
     $('#work-title').html(folio.project.title);
     $('#work-content').html(folio.project.content);
     $('#work-tags').html(folio.project.tags);
     $('#work-link').html(`<a href="${folio.project.link}">Go to project site!</a>`);
+
+    $('html, body').stop().animate({scrollTop:$('#work-title').offset().top}, 1000)
   });
 };
 
 // TO DO: EMAIL FORM ON SUBMIT FUNCTIONS
-// folio.form = function() {
-//   $('form').on('submit', function(e) {
-//     e.preventDefault();
-//     // window.location.href = 'mailto:jen@jensaxena.com';
-//   })
-// };
+folio.form = function() {
+  $('form').on('submit', function(e) {
+    e.preventDefault();
+    $('#send-mail').text(`Thanks!`);
+  });
+};
 
 // FIRE AT WILL
 folio.init = function() {
