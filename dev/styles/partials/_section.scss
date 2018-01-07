@@ -38,6 +38,10 @@ section:not(.section__home) {
   margin: 3rem auto;
 }
 
+.about__p--edu {
+  text-align: left;
+}
+
 .about__div--edu {
   @include flex-x;
   justify-content: space-between;
@@ -52,7 +56,7 @@ section:not(.section__home) {
   background: rgba(255,255,255,0.1);
   border-radius: 5px;
   display: inline-block;
-  margin: 1rem;
+  margin: 1rem 0.5rem;
   padding: 0.5rem;
 }
 

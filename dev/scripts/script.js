@@ -5,14 +5,14 @@ folio.projects = {
   'death-oracle': {
     'title': 'Death Oracle',
     'content': 'A simple random death generator',
-    'link': 'https://jensaxena.github.io/death-oracle/',
+    'link': 'hhttp://code.jensaxena.com/death-oracle/',
     'tags': [
       '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
     ]
   },
   'tarot-game': {
     'title': 'Tarot Game',
-    'link': 'https://jensaxena.github.io/playing-card-tarot/',
+    'link': 'http://code.jensaxena.com/playing-card-tarot/',
     'content': 'A divination game using the standard 52-card deck',
     'tags': [
       '<li>API</li>', '<li>CSS3</li>', '<li>Deck of Cards API</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
@@ -113,16 +113,19 @@ folio.work = function() {
   });
 };
 
-// EMAIL FORM ON SUBMIT
+// CHANGE BUTTON TEXT ON FORM SUBMIT
 folio.form = function() {
-  $('form').on('submit', function() {
-    $('#send-mail').text(`Thanks!`);
+  $('form').on('submit', function(e) {
+    e.preventDefault();
+    $('#submit').text('Thanks!');
+    $('#contactMe')[0].reset();
   });
 };
 
 // FIRE AT WILL
 folio.init = function() {
   folio.dropdown();
+  folio.form();
   folio.goBack();
   folio.scrolling();
   folio.scrollTo();
