@@ -30,6 +30,9 @@ $whi: rgb(255, 255, 255);
 
 a,
 button,
+a.button:active,
+a.button:focus,
+a.button:hover,
 figcaption .fa,
 p,
 .about__ul li,
@@ -41,7 +44,7 @@ p,
 
 body, .header__a--logo { background: $gr5; }
 
-button { background: $ora; }
+button, .button { background: $ora; }
 
 figure:active figcaption,
 figure:focus figcaption,

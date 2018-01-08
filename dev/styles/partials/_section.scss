@@ -50,6 +50,9 @@ section:not(.section__home) {
 .about__ul {
   margin: 0 2rem 3rem 0;
   text-align: left;
+  li {
+    margin-bottom: 1rem;
+  }
 }
 
 .devicons li {
@@ -61,15 +64,14 @@ section:not(.section__home) {
 }
 
 // WORK
-.section__work > .section__content {
-  @include flex-x;
-  justify-content: space-between;
-}
+// .section__work > .section__content {
+//   @include flex-x;
+//   justify-content: space-between;
+// }
 
 .aside__work {
-  margin: -0.75rem 0 1rem;
-  margin-top: -0.75rem;
-  width: calc(20% - 1rem);
+  margin: -0.75rem 1rem 1rem 0;
+  width: calc(33% - 1rem);
   li { padding: 1rem; }
 }
 
@@ -77,15 +79,11 @@ section:not(.section__home) {
 
 .aside__work--link a { padding: 0; }
 
-.work__div--gallery {
-  width: 75%;
-}
-
 figure {
-  float: left;
-  margin: 0 1rem 3rem;
-  width: calc(50% - 2rem);
+  display: none;
+  margin: 0 0 3rem 1rem;
   position: relative;
+  width: calc(100% - 2rem);
   img {
     display: block;
     width: 100%;

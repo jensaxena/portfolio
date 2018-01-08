@@ -14,7 +14,8 @@
   justify-content: center;
 }
 
-button {
+button,
+.button {
   border: none;
   margin: 0 auto;
   padding: 1rem 4rem;
@@ -22,7 +23,10 @@ button {
 
 button:active,
 button:focus,
-button:hover {
+button:hover,
+.button:active,
+.button:focus,
+.button:hover {
   box-shadow: 2px -1px 0 black, -2px -1px 0 black, -2px 3px 0 black, 2px 3px 0 black;
 }
 

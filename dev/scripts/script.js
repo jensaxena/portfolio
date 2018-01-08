@@ -2,20 +2,20 @@
 const folio = {};
 
 folio.projects = {
+  'beat-box': {
+    'title': 'Beat-Box Hero',
+    'content': 'Based on Wes Bos\' #JavaScript30 - JavaScript Drum Kit. Went a bit overboard playing with the stylesheet',
+    'link': 'https://jensaxena.github.io/beat-box-hero/',
+    'tags': [
+      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>'
+    ]
+  },
   'death-oracle': {
     'title': 'Death Oracle',
     'content': 'A simple random death generator',
-    'link': 'hhttp://code.jensaxena.com/death-oracle/',
+    'link': 'http://code.jensaxena.com/death-oracle/',
     'tags': [
       '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
-    ]
-  },
-  'tarot-game': {
-    'title': 'Tarot Game',
-    'link': 'http://code.jensaxena.com/playing-card-tarot/',
-    'content': 'A divination game using the standard 52-card deck',
-    'tags': [
-      '<li>API</li>', '<li>CSS3</li>', '<li>Deck of Cards API</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
     ]
   },
   'get-help': {
@@ -24,6 +24,14 @@ folio.projects = {
     'content': 'Enter a one-word search term, get some advice. Results not guaranteed',
     'tags': [
       '<li>Advice Slip API</li>', '<li>API</li>', '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>','<li>JSX</li>', '<li>React</li>'
+    ]
+  },
+  'tarot-game': {
+    'title': 'Tarot Game',
+    'link': 'http://code.jensaxena.com/playing-card-tarot/',
+    'content': 'A divination game using the standard 52-card deck',
+    'tags': [
+      '<li>API</li>', '<li>CSS3</li>', '<li>Deck of Cards API</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
     ]
   },
   'the-haps': {
@@ -45,30 +53,28 @@ folio.goBack = function() {
 
 // FADE IN/OUT DROPDOWN NAV
 folio.fade = function() {
-  $('#dropdown').fadeToggle(900);
-};
 
-folio.menu = function() {
+  // WAX ON, WAX OFF
   if ($('#menu-collapse').hasClass('fa-bars')) {
     $('#menu-collapse').removeClass('fa-bars');
     $('#menu-collapse').addClass('fa-times');
   } else {
-    $('#menu-collapse').addClass('fa-bars');
     $('#menu-collapse').removeClass('fa-times');
+    $('#menu-collapse').addClass('fa-bars');
   }
+
+  $('#dropdown').fadeToggle(900);
 };
 
 // DO FADE ON MENU ICON CLICK
 folio.dropdown = function() {
   $('#menu-collapse').on('click', function() {
     folio.fade();
-    folio.menu();
   });
 };
 
 // CHANGE SIDEBAR LOCATION INDICATOR
 folio.scrolling = function() {
-
   $(window).scroll(function() {
     folio.location = $(this).scrollTop();
 
@@ -99,6 +105,7 @@ folio.scrollTo = function() {
   });
 };
 
+// DISPLAY PROJECT INFO
 folio.work = function() {
   $('figure').on('click', function() {
     folio.project = folio.projects[$(this).attr('id')];
@@ -106,10 +113,36 @@ folio.work = function() {
     $('#work-title').html(folio.project.title);
     $('#work-content').html(folio.project.content);
     $('#work-tags').html(folio.project.tags);
-    $('#work-link').html(`<a href="${folio.project.link}">Go to project site!</a>`);
+    $('#work-link').html(`<a href="${folio.project.link}" target="_blank">Go to project site!</a>`);
 
     $('html, body').stop().animate({scrollTop:$('#work').offset().top}, 1000)
+  });
+};
 
+// SHOW PROJECTS
+folio.gallery = function() {
+  let i = 0;
+  folio.figure = Object.keys(folio.projects);
+  $(`#${folio.figure[i]}`).show();
+
+  $('#show-more').on('click', function() {
+
+    // RESET PROJECT INFO
+    $('#work-title').html('Click on a project for more information:');
+    $('#work-content').html('');
+    $('#work-tags').html('');
+    $('#work-link').html('');
+
+    // FADE IN-OUT
+    $(`#${folio.figure[i]}`).fadeOut('fast', function() {
+      if (i < folio.figure.length - 1) {
+        $(`#${folio.figure[i+1]}`).fadeIn('fast');
+        i++;
+      } else {
+        i = 0;
+        $(`#${folio.figure[i]}`).fadeIn('fast');
+      }
+    });
   });
 };
 
@@ -126,6 +159,7 @@ folio.form = function() {
 folio.init = function() {
   folio.dropdown();
   folio.form();
+  folio.gallery();
   folio.goBack();
   folio.scrolling();
   folio.scrollTo();
