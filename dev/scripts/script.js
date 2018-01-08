@@ -155,19 +155,9 @@ folio.gallery = function() {
   });
 };
 
-// CHANGE BUTTON TEXT ON FORM SUBMIT
-folio.form = function() {
-  $('form').on('submit', function(e) {
-    e.preventDefault();
-    $('#submit').text('Thanks!');
-    $('#contactMe')[0].reset();
-  });
-};
-
 // FIRE AT WILL
 folio.init = function() {
   folio.dropdown();
-  folio.form();
   folio.gallery();
   folio.goBack();
   folio.scrolling();
