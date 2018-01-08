@@ -2,39 +2,6 @@
 const folio = {};
 
 folio.projects = {
-  'art-port': {
-    'title': 'art.jensaxena.com',
-    'content': 'Recursive self-promotion! A portfolio site for art and graphic design work',
-    'link': 'http://art.jensaxena.com',
-    'tags': [
-      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>',
-      '<li>SVG Animation</li>'
-    ]
-  },
-  'beat-box': {
-    'title': 'Beat-Box Hero',
-    'content': 'Based on Wes Bos\' #JavaScript30 - JavaScript Drum Kit. Went a bit overboard playing with the stylesheet',
-    'link': 'https://jensaxena.github.io/beat-box-hero/',
-    'tags': [
-      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>'
-    ]
-  },
-  'death-oracle': {
-    'title': 'Death Oracle',
-    'content': 'A simple random death generator',
-    'link': 'http://code.jensaxena.com/death-oracle/',
-    'tags': [
-      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
-    ]
-  },
-  'get-help': {
-    'title': 'Get Help',
-    'link': 'http://code.jensaxena.com/get-help/',
-    'content': 'Enter a one-word search term, get some advice. Results not guaranteed',
-    'tags': [
-      '<li>Advice Slip API</li>', '<li>API</li>', '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>','<li>JSX</li>', '<li>React</li>'
-    ]
-  },
   'the-haps': {
     'title': 'The Haps',
     'link': 'https://what-s-the-haps.firebaseapp.com',
@@ -49,6 +16,39 @@ folio.projects = {
     'content': 'A divination game using the standard 52-card deck',
     'tags': [
       '<li>API</li>', '<li>CSS3</li>', '<li>Deck of Cards API</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
+    ]
+  },
+  'get-help': {
+    'title': 'Get Help',
+    'link': 'http://code.jensaxena.com/get-help/',
+    'content': 'Enter a one-word search term, get some advice. Results not guaranteed',
+    'tags': [
+      '<li>Advice Slip API</li>', '<li>API</li>', '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>','<li>JSX</li>', '<li>React</li>'
+    ]
+  },
+  'death-oracle': {
+    'title': 'Death Oracle',
+    'content': 'A simple random death generator',
+    'link': 'http://code.jensaxena.com/death-oracle/',
+    'tags': [
+      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
+    ]
+  },
+  'beat-box': {
+    'title': 'Beat-Box Hero',
+    'content': 'Based on Wes Bos\' #JavaScript30 - JavaScript Drum Kit. Went a bit overboard playing with the stylesheet',
+    'link': 'https://jensaxena.github.io/beat-box-hero/',
+    'tags': [
+      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>'
+    ]
+  },
+  'art-port': {
+    'title': 'art.jensaxena.com',
+    'content': 'Recursive self-promotion! A portfolio site for art and graphic design work',
+    'link': 'http://art.jensaxena.com',
+    'tags': [
+      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>',
+      '<li>SVG Animation</li>'
     ]
   },
 };
