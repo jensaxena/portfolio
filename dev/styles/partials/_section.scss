@@ -76,9 +76,9 @@ section:not(.section__home) {
 
 figure {
   display: none;
-  margin: 0 0 3rem 1rem;
+  margin: 0 1rem 3rem;
   position: relative;
-  width: calc(100% - 1rem);
+  width: calc(100% - 2rem);
   img {
     display: block;
     width: 100%;

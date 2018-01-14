@@ -36,11 +36,9 @@ folio.projects = {
   },
   'beat-box': {
     'title': 'Beat-Box Hero',
-    'content': 'Based on Wes Bos\' #JavaScript30 - JavaScript Drum Kit. Went a bit overboard playing with the stylesheet',
-    'link': 'https://jensaxena.github.io/beat-box-hero/',
-    'tags': [
-      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>'
-    ]
+    'content': 'This started out as Wes Bos\' #JavaScript30 -  JavaScript Drum Kit, then I rewrote everything in jQuery and added some hype',
+    'link': 'http://code.jensaxena.com/beat-box-hero/',
+    'tags': ['<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>']
   },
   'art-port': {
     'title': 'art.jensaxena.com',
