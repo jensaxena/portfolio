@@ -142,7 +142,7 @@ folio.gallery = function() {
   folio.figure = Object.keys(folio.projects);
   $(`#${folio.figure[i]}`).show();
 
-  $('#show-more').on('click', function() {
+  $('#next').on('click', function() {
 
     // RESET PROJECT INFO
     $('#work-title').html('Click on a project for more information:');
@@ -158,6 +158,26 @@ folio.gallery = function() {
       } else {
         i = 0;
         $(`#${folio.figure[i]}`).fadeIn('fast');
+      }
+    });
+  });
+  $('#back').on('click', function() {
+
+    // RESET PROJECT INFO
+    $('#work-title').html('Click on a project for more information:');
+    $('#work-content').html('');
+    $('#work-tags').html('');
+    $('#work-link').html('');
+
+    // FADE IN-OUT
+    $(`#${folio.figure[i]}`).fadeOut('fast', function() {
+      if (i === 0) {
+        i = folio.figure.length - 1;
+        $(`#${folio.figure[i]}`).fadeIn('fast');
+      }
+      else {
+        $(`#${folio.figure[i-1]}`).fadeIn('fast');
+        i--;
       }
     });
   });
