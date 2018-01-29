@@ -1,9 +1,10 @@
-node_modules/
-public/**/*
-package-lock.json
-settings.json
-formtools/
+beat-box-hero/
+cyber-space-synth/
 death-oracle/
+formtools/
 get-help/
+node_modules/
+package-lock.json
 playing-card-tarot/
-
+public/**/*
+settings.json
