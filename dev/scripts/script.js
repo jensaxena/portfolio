@@ -34,11 +34,21 @@ folio.projects = {
       '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
     ]
   },
+  'cyber-space-synth': {
+    'title': 'Super Cyber Space Synth',
+    'content': 'Playing around with the Web Audio API! v.1.0 - make some noise',
+    'link': 'http://code.jensaxena.com/cyber-space-synth/',
+    'tags': [
+      '<li>API</li>', '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>', '<li>Web Audio API</li>'
+    ]
+  },
   'beat-box': {
     'title': 'Beat-Box Hero',
     'content': 'This started out as Wes Bos\' #JavaScript30 -  JavaScript Drum Kit, then I rewrote everything in jQuery and added some hype',
     'link': 'http://code.jensaxena.com/beat-box-hero/',
-    'tags': ['<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>']
+    'tags': [
+      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
+    ]
   },
   'art-port': {
     'title': 'art.jensaxena.com',
