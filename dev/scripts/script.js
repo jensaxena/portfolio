@@ -2,6 +2,30 @@
 const folio = {};
 
 folio.projects = {
+  'smashy-smashy': {
+    'title': 'Smashy Smashy',
+    'link': 'http://code.jensaxena.com/smashy-smashy',
+    'content': 'A breakcore breakout game based on the MDN HTML5 Canvas tutorials',
+    'tags': [
+      '<li>Canvas</li>', '<li>CSS3</li>','<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
+    ]
+  },
+  'cyber-space-synth': {
+    'title': 'Super Cyber Space Synth',
+    'content': 'Playing around with the Web Audio API! v.1.0 - make some noise',
+    'link': 'http://code.jensaxena.com/cyber-space-synth',
+    'tags': [
+      '<li>API</li>', '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>', '<li>Web Audio API</li>'
+    ]
+  },
+  'beat-box': {
+    'title': 'Beat-Box Hero',
+    'content': 'This started out as Wes Bos\' #JavaScript30 -  JavaScript Drum Kit, then I rewrote everything in jQuery and added some hype',
+    'link': 'http://code.jensaxena.com/beat-box-hero',
+    'tags': [
+      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
+    ]
+  },
   'the-haps': {
     'title': 'The Haps',
     'link': 'https://what-s-the-haps.firebaseapp.com',
@@ -12,7 +36,7 @@ folio.projects = {
   },
   'tarot-game': {
     'title': 'Tarot Game',
-    'link': 'http://code.jensaxena.com/playing-card-tarot/',
+    'link': 'http://code.jensaxena.com/playing-card-tarot',
     'content': 'A divination game using the standard 52-card deck',
     'tags': [
       '<li>API</li>', '<li>CSS3</li>', '<li>Deck of Cards API</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
@@ -20,7 +44,7 @@ folio.projects = {
   },
   'get-help': {
     'title': 'Get Help',
-    'link': 'http://code.jensaxena.com/get-help/',
+    'link': 'http://code.jensaxena.com/get-help',
     'content': 'Enter a one-word search term, get some advice. Results not guaranteed',
     'tags': [
       '<li>Advice Slip API</li>', '<li>API</li>', '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>','<li>JSX</li>', '<li>React</li>'
@@ -29,23 +53,7 @@ folio.projects = {
   'death-oracle': {
     'title': 'Death Oracle',
     'content': 'A simple random death generator',
-    'link': 'http://code.jensaxena.com/death-oracle/',
-    'tags': [
-      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
-    ]
-  },
-  'cyber-space-synth': {
-    'title': 'Super Cyber Space Synth',
-    'content': 'Playing around with the Web Audio API! v.1.0 - make some noise',
-    'link': 'http://code.jensaxena.com/cyber-space-synth/',
-    'tags': [
-      '<li>API</li>', '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>', '<li>Web Audio API</li>'
-    ]
-  },
-  'beat-box': {
-    'title': 'Beat-Box Hero',
-    'content': 'This started out as Wes Bos\' #JavaScript30 -  JavaScript Drum Kit, then I rewrote everything in jQuery and added some hype',
-    'link': 'http://code.jensaxena.com/beat-box-hero/',
+    'link': 'http://code.jensaxena.com/death-oracle',
     'tags': [
       '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
     ]
@@ -142,13 +150,16 @@ folio.gallery = function() {
   folio.figure = Object.keys(folio.projects);
   $(`#${folio.figure[i]}`).show();
 
-  $('#next').on('click', function() {
-
-    // RESET PROJECT INFO
+  // RESET PROJECT INFO
+  function reset() {
     $('#work-title').html('Click on a project for more information:');
     $('#work-content').html('');
     $('#work-tags').html('');
     $('#work-link').html('');
+  }
+
+  $('#next').on('click', function() {
+    reset();
 
     // FADE IN-OUT
     $(`#${folio.figure[i]}`).fadeOut('fast', function() {
@@ -162,12 +173,7 @@ folio.gallery = function() {
     });
   });
   $('#back').on('click', function() {
-
-    // RESET PROJECT INFO
-    $('#work-title').html('Click on a project for more information:');
-    $('#work-content').html('');
-    $('#work-tags').html('');
-    $('#work-link').html('');
+    reset();
 
     // FADE IN-OUT
     $(`#${folio.figure[i]}`).fadeOut('fast', function() {
