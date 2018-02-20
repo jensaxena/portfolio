@@ -106,7 +106,7 @@ folio.scrolling = function() {
     $('section').each(function() {
       folio.target = $(this).offset().top;
       folio.targetID = $(this).attr('id');
-
+      console.log(this)
       // UPDATE CURRENT LOCATION
       if (folio.location + 1 >= folio.target) {
         $('.nav__sidebar--link').removeClass('nav__sidebar--active');
@@ -144,49 +144,41 @@ folio.work = function() {
   });
 };
 
-// SHOW PROJECTS
+// SHOW PROJECT
 folio.gallery = function() {
   let i = 0;
   folio.figure = Object.keys(folio.projects);
   $(`#${folio.figure[i]}`).show();
 
-  // RESET PROJECT INFO
+  // RESET PROJECT
   function reset() {
+    $(`#${folio.figure[i]}`).hide().fadeOut('fast');
     $('#work-title').html('Click on a project for more information:');
     $('#work-content').html('');
     $('#work-tags').html('');
     $('#work-link').html('');
   }
 
-  $('#next').on('click', function() {
+  $('button').on('click', function() {
     reset();
 
-    // FADE IN-OUT
-    $(`#${folio.figure[i]}`).fadeOut('fast', function() {
+    if (this.id === 'next') {
       if (i < folio.figure.length - 1) {
-        $(`#${folio.figure[i+1]}`).fadeIn('fast');
         i++;
       } else {
         i = 0;
-        $(`#${folio.figure[i]}`).fadeIn('fast');
       }
-    });
-  });
-  $('#back').on('click', function() {
-    reset();
-
-    // FADE IN-OUT
-    $(`#${folio.figure[i]}`).fadeOut('fast', function() {
+    }
+    if (this.id === 'back') {
       if (i === 0) {
         i = folio.figure.length - 1;
-        $(`#${folio.figure[i]}`).fadeIn('fast');
-      }
-      else {
-        $(`#${folio.figure[i-1]}`).fadeIn('fast');
+      } else {
         i--;
       }
-    });
-  });
+    }
+
+    $(`#${folio.figure[i]}`).show().fadeIn('fast');
+  })
 };
 
 // FIRE AT WILL
