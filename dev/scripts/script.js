@@ -2,12 +2,12 @@
 const folio = {};
 
 folio.projects = {
-  'jump-scare': {
-    'title': 'Jump Scare',
-    'link': 'http://code.jensaxena.com/jump-scare',
-    'content': 'A card-matching memory game with a t̶w̶i̶s̶t̶ jump',
+  'cyber-space-synth': {
+    'title': 'Super Cyber Space Synth',
+    'content': 'Playing around with the Web Audio API! v.1.0 - make some noise',
+    'link': 'http://code.jensaxena.com/cyber-space-synth',
     'tags': [
-      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>JSX</li>', '<li>React</li>'
+      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>', '<li>Web Audio API</li>'
     ]
   },
   'smashy-smashy': {
@@ -18,12 +18,12 @@ folio.projects = {
       '<li>Canvas</li>', '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
     ]
   },
-  'cyber-space-synth': {
-    'title': 'Super Cyber Space Synth',
-    'content': 'Playing around with the Web Audio API! v.1.0 - make some noise',
-    'link': 'http://code.jensaxena.com/cyber-space-synth',
+  'jump-scare': {
+    'title': 'Jump Scare',
+    'link': 'http://code.jensaxena.com/jump-scare',
+    'content': 'A card-matching memory game with a <strike>twist</strike> jump',
     'tags': [
-      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>', '<li>Web Audio API</li>'
+      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>JSX</li>', '<li>React</li>'
     ]
   },
   'beat-box': {
