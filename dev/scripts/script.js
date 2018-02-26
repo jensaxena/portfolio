@@ -2,12 +2,20 @@
 const folio = {};
 
 folio.projects = {
+  'jump-scare': {
+    'title': 'Jump Scare',
+    'link': 'http://code.jensaxena.com/jump-scare',
+    'content': 'A card-matching memory game with a t̶w̶i̶s̶t̶ jump',
+    'tags': [
+      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>JSX</li>', '<li>React</li>'
+    ]
+  },
   'smashy-smashy': {
     'title': 'Smashy Smashy',
     'link': 'http://code.jensaxena.com/smashy-smashy',
     'content': 'A breakcore breakout game based on the MDN HTML5 Canvas tutorials',
     'tags': [
-      '<li>Canvas</li>', '<li>CSS3</li>','<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
+      '<li>Canvas</li>', '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
     ]
   },
   'cyber-space-synth': {
@@ -15,7 +23,7 @@ folio.projects = {
     'content': 'Playing around with the Web Audio API! v.1.0 - make some noise',
     'link': 'http://code.jensaxena.com/cyber-space-synth',
     'tags': [
-      '<li>API</li>', '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>', '<li>Web Audio API</li>'
+      '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>', '<li>Web Audio API</li>'
     ]
   },
   'beat-box': {
@@ -31,7 +39,7 @@ folio.projects = {
     'link': 'https://what-s-the-haps.firebaseapp.com',
     'content': 'A group project: search Ticketmaster for events and coordinate meetups with your friends',
     'tags': [
-      '<li>API</li>', '<li>CSS3</li>',  '<li>Firebase</li>','<li>HTML5</li>', '<li>JavaScript</li>','<li>JSX</li>', '<li>React</li>', '<li>Ticketmaster API</li>'
+      '<li>CSS3</li>', '<li>Firebase</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>JSX</li>', '<li>React</li>', '<li>Ticketmaster API</li>'
     ]
   },
   'tarot-game': {
@@ -39,7 +47,7 @@ folio.projects = {
     'link': 'http://code.jensaxena.com/playing-card-tarot',
     'content': 'A divination game using the standard 52-card deck',
     'tags': [
-      '<li>API</li>', '<li>CSS3</li>', '<li>Deck of Cards API</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
+      '<li>CSS3</li>', '<li>Deck of Cards API</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>'
     ]
   },
   'get-help': {
@@ -47,7 +55,7 @@ folio.projects = {
     'link': 'http://code.jensaxena.com/get-help',
     'content': 'Enter a one-word search term, get some advice. Results not guaranteed',
     'tags': [
-      '<li>Advice Slip API</li>', '<li>API</li>', '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>','<li>JSX</li>', '<li>React</li>'
+      '<li>Advice Slip API</li>', '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>JSX</li>', '<li>React</li>'
     ]
   },
   'death-oracle': {
@@ -70,14 +78,14 @@ folio.projects = {
 };
 
 // RETURN TO TOP ON REFRESH
-folio.goBack = function() {
-  $(window).on('beforeunload', function() {
+folio.goBack = function () {
+  $(window).on('beforeunload', function () {
     $(window).scrollTop(0);
   });
 };
 
 // FADE IN/OUT DROPDOWN NAV
-folio.fade = function() {
+folio.fade = function () {
 
   // WAX ON, WAX OFF
   if ($('#menu-collapse').hasClass('fa-bars')) {
@@ -92,21 +100,21 @@ folio.fade = function() {
 };
 
 // DO FADE ON MENU ICON CLICK
-folio.dropdown = function() {
-  $('#menu-collapse').on('click', function() {
+folio.dropdown = function () {
+  $('#menu-collapse').on('click', function () {
     folio.fade();
   });
 };
 
 // CHANGE SIDEBAR LOCATION INDICATOR
-folio.scrolling = function() {
-  $(window).scroll(function() {
+folio.scrolling = function () {
+  $(window).scroll(function () {
     folio.location = $(this).scrollTop();
 
-    $('section').each(function() {
+    $('section').each(function () {
       folio.target = $(this).offset().top;
       folio.targetID = $(this).attr('id');
-      console.log(this)
+
       // UPDATE CURRENT LOCATION
       if (folio.location + 1 >= folio.target) {
         $('.nav__sidebar--link').removeClass('nav__sidebar--active');
@@ -117,12 +125,12 @@ folio.scrolling = function() {
 };
 
 // GO DIRECTLY TO SECTION
-folio.scrollTo = function() {
-  $('a[href^="#"]').on('click', function(e) {
+folio.scrollTo = function () {
+  $('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     folio.section = $(this.getAttribute('href'));
 
-    $('html, body').stop().animate({scrollTop:folio.section.offset().top}, 1000);
+    $('html, body').stop().animate({ scrollTop: folio.section.offset().top }, 1000);
 
     if ($('#dropdown').is(':visible')) {
       folio.fade();
@@ -131,8 +139,8 @@ folio.scrollTo = function() {
 };
 
 // DISPLAY PROJECT INFO
-folio.work = function() {
-  $('figure').on('click', function() {
+folio.work = function () {
+  $('figure').on('click', function () {
     folio.project = folio.projects[$(this).attr('id')];
 
     $('#work-title').html(folio.project.title);
@@ -140,12 +148,12 @@ folio.work = function() {
     $('#work-tags').html(folio.project.tags);
     $('#work-link').html(`<a href="${folio.project.link}" target="_blank">Go to project site!</a>`);
 
-    $('html, body').stop().animate({scrollTop:$('#work').offset().top}, 1000)
+    $('html, body').stop().animate({ scrollTop: $('#work').offset().top }, 1000)
   });
 };
 
 // SHOW PROJECT
-folio.gallery = function() {
+folio.gallery = function () {
   let i = 0;
   folio.figure = Object.keys(folio.projects);
   $(`#${folio.figure[i]}`).show();
@@ -159,7 +167,7 @@ folio.gallery = function() {
     $('#work-link').html('');
   }
 
-  $('button').on('click', function() {
+  $('button').on('click', function () {
     reset();
 
     if (this.id === 'next') {
@@ -182,7 +190,7 @@ folio.gallery = function() {
 };
 
 // FIRE AT WILL
-folio.init = function() {
+folio.init = function () {
   folio.dropdown();
   folio.gallery();
   folio.goBack();
