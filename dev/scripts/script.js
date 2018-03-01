@@ -4,7 +4,7 @@ const folio = {};
 folio.projects = {
   'cyber-space-synth': {
     'title': 'Super Cyber Space Synth',
-    'content': 'Playing around with the Web Audio API! v.1.0 - make some noise',
+    'content': 'Playing around with the Web Audio API! v.1.1 - surfing on sine waves. </br> This project is under development and only tested in Chrome on desktop - for now. Stay tuned!',
     'link': 'http://code.jensaxena.com/cyber-space-synth',
     'tags': [
       '<li>CSS3</li>', '<li>HTML5</li>', '<li>JavaScript</li>', '<li>jQuery</li>', '<li>Web Audio API</li>'
