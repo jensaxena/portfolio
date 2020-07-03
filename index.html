@@ -1,492 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">,
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- ICONOGRAPHY -->
-	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" sizes="57x57" href="/public/images/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/public/images/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/public/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/public/images/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/public/images/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/public/images/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/public/images/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/public/images/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/public/images/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" href="/public/images/favicon-16x16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="/public/images/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/public/images/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="/public/images/android-chrome-192x192.png" sizes="192x192">
-	<meta name="msapplication-square70x70logo" content="/public/images/smalltile.png" />
-	<meta name="msapplication-square150x150logo" content="/public/images/mediumtile.png" />
-	<meta name="msapplication-wide310x150logo" content="/public/images/widetile.png" />
-	<meta name="msapplication-square310x310logo" content="/public/images/largetile.png" />
-	<title>Jen Saxena</title>
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display+SC:900" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<script src="https://use.fontawesome.com/fafaa81dee.js"></script>
-	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    ,
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- ICONOGRAPHY -->
+    <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/images/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/images/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/images/apple-touch-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/public/images/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/public/images/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/public/images/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/public/images/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/images/apple-touch-icon-180x180.png"
+    />
+    <link rel="icon" type="image/png" href="/public/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/public/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/public/images/favicon-96x96.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/public/images/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <meta name="msapplication-square70x70logo" content="/public/images/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="/public/images/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="/public/images/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="/public/images/largetile.png" />
+    <title>Jen Saxena</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display+SC:900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <script src="https://use.fontawesome.com/fafaa81dee.js"></script>
+    <link rel="stylesheet" type="text/css" href="/public/styles/style.css" />
+  </head>
+  <body>
+    <header class="header__top">
+      <div class="wrapper">
+        <a class="header__a--logo" href="#home">
+          <img src="/public/images/logo-white-trace.svg" alt="" /> </a
+        ><!-- .header__a--logo -->
 
-	<header class="header__top">
-		<div class="wrapper">
+        <i
+          class="fa fa-bars fa-fw nav__dropdown--menu-collapse"
+          id="menu-collapse"
+          aria-hidden="true"
+        ></i>
 
-			<a class="header__a--logo" href="#home">
-				<img src="/public/images/logo-white-trace.svg" alt="" />
-			</a><!-- .header__a--logo -->
+        <nav class="nav__dropdown" id="dropdown">
+          <h2 class="nav__dropdown--head">Jen Saxena</h2>
+          <ul class="nav__dropdown--menu">
+            <li>
+              <a class="nav__dropdown--link" href="#home">Home</a>
+            </li>
+            <!-- .nav__dropdown--link -->
+            <li>
+              <a class="nav__dropdown--link" href="#about">About Me</a>
+            </li>
+            <!-- .nav__dropdown--link -->
+            <li>
+              <a class="nav__dropdown--link" href="#contact">Contact Me</a>
+            </li>
+            <!-- .nav__dropdown--link -->
+          </ul>
 
-			<i class="fa fa-bars fa-fw nav__dropdown--menu-collapse" id="menu-collapse" aria-hidden="true"></i>
+          <ul class="nav__dropdown--social">
+            <li>
+              <a href="https://codepen.io/jensaxena/" aria-label="codepen">
+                <i class="fa fa-codepen fa-fw" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/jensaxena" aria-label="github">
+                <i class="fa fa-github fa-fw" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/jensaxena/" aria-label="instagram">
+                <i class="fa fa-instagram fa-fw" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jensaxena/" aria-label="linkedin">
+                <i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@jensaxena/" aria-label="medium">
+                <i class="fa fa-medium fa-fw" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/jensaxena" aria-label="twitter">
+                <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- .nav__dropdown--social -->
 
-			<nav class="nav__dropdown" id="dropdown">
-				<h2 class="nav__dropdown--head">Jen Saxena</h2>
-				<ul class="nav__dropdown--menu">
-					<li>
-						<a class="nav__dropdown--link" href="#home">Home</a>
-					</li><!-- .nav__dropdown--link -->
-					<li>
-						<a class="nav__dropdown--link"href="#about">About Me</a>
-					</li><!-- .nav__dropdown--link -->
-					<li>
-						<a class="nav__dropdown--link" href="#work">My Work</a>
-					</li><!-- .nav__dropdown--link -->
-					<li>
-						<a class="nav__dropdown--link" href="#contact">Contact Me</a>
-					</li><!-- .nav__dropdown--link -->
-				</ul>
+          <p class="copyright">
+            <script type="text/javascript">
+              document.write(`&copy; 2017-` + new Date().getFullYear())
+            </script>
+            <a href="mailto:jen@jensaxena.com">
+              Jen Saxena
+            </a>
+            - all rights reserved.
+          </p>
+          <!-- .copyright -->
+        </nav>
+        <!-- .nav__dropdown #dropdown -->
 
-				<ul class="nav__dropdown--social">
-					<li>
-						<a href="https://codepen.io/jensaxena/">
-							<i class="fa fa-codepen fa-fw" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/jensaxena">
-							<i class="fa fa-github fa-fw" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/jensaxena/">
-							<i class="fa fa-instagram fa-fw" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/jensaxena/">
-							<i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://medium.com/@jensaxena/">
-							<i class="fa fa-medium fa-fw" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/jensaxena">
-							<i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
-						</a>
-					</li>
-				</ul><!-- .nav__dropdown--social -->
+        <nav class="nav__sidebar">
+          <ul>
+            <li class="nav__sidebar--link nav__sidebar--active" id="home--active">
+              <a href="#home"></a>
+            </li>
+            <li class="nav__sidebar--link" id="about--active">
+              <a href="#about"></a>
+            </li>
+            <!-- <li class="nav__sidebar--link" id="work--active">
+              <a href="#work"></a>
+            </li> -->
+            <li class="nav__sidebar--link" id="contact--active">
+              <a href="#contact"></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav__sidebar -->
+      </div>
+      <!-- .wrapper -->
+    </header>
+    <!-- .header__top -->
 
-				<p class="copyright">&copy; 2017-2018
-					<a href="mailto:jen@jensaxena.com">
-						Jen Saxena
-					</a>
-					- all rights reserved.
-				</p><!-- .copyright -->
-			</nav><!-- .nav__dropdown #dropdown -->
+    <main class="wrapper">
+      <section class="section__home" id="home">
+        <div class="home__div--half">
+          <h1>
+            <span class="gre">
+              &#60;h1&#62;
+              <span class="ora"> Hello </span>
+              &#60;&#47;h1&#62;
+            </span>
 
-			<nav class="nav__sidebar">
-				<ul>
-					<li class="nav__sidebar--link nav__sidebar--active" id="home--active">
-						<a href="#home"></a>
-					</li>
-					<li class="nav__sidebar--link" id="about--active">
-						<a href="#about"></a>
-					</li>
-					<li class="nav__sidebar--link" id="work--active">
-						<a href="#work"></a>
-					</li>
-					<li class="nav__sidebar--link" id="contact--active">
-						<a href="#contact"></a>
-					</li>
-				</ul>
-			</nav><!-- .nav__sidebar -->
+            <br />
 
-		</div><!-- .wrapper -->
-	</header><!-- .header__top -->
+            <span class="gre">
+              &#60;h2&#62;
+              <span class="ora"> My name is</span>
+              <span class="red bold"> Jen Saxena </span>
+              &#60;&#47;h2&#62;
+            </span>
 
-	<main class="wrapper">
+            <br />
+            <br />
 
-		<section class="section__home" id="home">
-			<div class="home__div--half">
-				<h1>
-					<span class="gre">
-						&#60;h1&#62;
-						<span class="ora"> Hello </span>
-						&#60;&#47;h1&#62;
-					</span>
+            <span class="yel bold">
+              iAmA()
+              <span class="gre"> &#123;</span>
+            </span>
 
-					<br />
+            <br />
 
-					<span class="gre">
-						&#60;h2&#62;
-						<span class="ora"> My name is</span>
-						<span class="red bold"> Jen Saxena </span>
-						&#60;&#47;h2&#62;
-					</span>
+            <span class="ora indent">
+              Front-End Web
+              <span class="red bold"> Developer</span>
+              <span class="pur"> &amp;&amp; </span>
 
-					<br />
-					<br />
+              <br />
 
-					<span class="yel bold">
-						iAmA()
-						<span class="gre"> &#123;</span>
-					</span>
+              <span class="red bold indent">Artist </span>
+              and
+              <span class="red bold"> Designer</span>
+              <span class="pur"> &#61;&#61;&#61; &#34;</span>
+              <span class="bold">true</span>
+              <span class="pur">&#34;</span>
+            </span>
 
-					<br />
+            <br />
 
-					<span class="ora indent">
-						Front-End Web
-						<span class="red bold"> Developer</span>
-						<span class="pur"> &amp;&amp; </span>
+            <span class="gre bold">&#125;</span>
+          </h1>
+        </div>
+        <!-- .home__div--half -->
 
-						<br />
+        <div class="home__div--half">
+          <!-- background image here -->
+        </div>
+        <!-- .home__div--half -->
+      </section>
+      <!-- .section__home #home -->
 
-						<span class="red bold indent">Artist </span>
-						and
-						<span class="red bold"> Designer</span>
-						<span class="pur"> &#61;&#61;&#61; &#34;</span>
-						<span class="bold">true</span>
-						<span class="pur">&#34;</span>
-					</span>
+      <section class="section__about" id="about">
+        <header class="section__head">
+          <h2>
+            <span class="gre">&#123; </span>
+            About Me
+            <span class="gre"> &#125;</span>
+            <span class="sub-head">Art-Design-Development</span>
+          </h2>
+        </header>
+        <!-- .section__head -->
 
-					<br />
+        <p class="about__p">
+          <span class="gre">
+            &#60;p&#62;
+          </span>
+          I am a Toronto-based developer with a strong entrepreneurial background, excellent
+          communication skills and a love for the creative and problem-solving aspects of coding.
+          <span class="gre">
+            &#60;&#47;p&#62;
+          </span>
+        </p>
+        <!-- .about__p -->
 
-					<span class="gre bold">&#125;</span>
-				</h1>
-			</div><!-- .home__div--half -->
+        <p class="about__p">
+          <span class="gre">
+            &#60;p&#62;
+          </span>
+          If you would like to find out more, please<a href="#contact"
+            ><span class="gre">&#123; </span>contact me<span class="gre"> &#125;</span></a
+          >!
+          <span class="gre">
+            &#60;&#47;p&#62;
+          </span>
+        </p>
+        <!-- .about__p -->
 
-			<div class="home__div--half">
-				<!-- background image here -->
-			</div><!-- .home__div--half -->
-		</section><!-- .section__home #home -->
+        <p class="about__p--edu">
+          Education:
+        </p>
+        <!-- .about__p -->
 
-		<section class="section__about" id="about">
-			<header class="section__head">
-				<h2>
-					<span class="gre">&#123; </span>
-					About Me
-					<span class="gre"> &#125;</span>
-					<span class="sub-head">Art-Design-Development</span>
-				</h2>
-			</header><!-- .section__head -->
+        <div class="about__div--edu">
+          <ul class="about__ul">
+            <li>
+              <span class="gre">
+                &#60;li&#62;
+              </span>
+              HackerYou College of Technology
+              <span class="gre">
+                &#60;&#47;li&#62;
+              </span>
+            </li>
+            <li>
+              <span class="gre">
+                &#60;li&#62;
+              </span>
+              Web Development Immersive
+              <span class="gre">
+                &#60;&#47;li&#62;
+              </span>
+            </li>
+            <li>
+              <span class="gre">
+                &#60;li&#62;
+              </span>
+              2017
+              <span class="gre">
+                &#60;&#47;li&#62;
+              </span>
+            </li>
+          </ul>
+          <!-- .about__ul -->
+          <ul class="about__ul">
+            <li>
+              <span class="gre">
+                &#60;li&#62;
+              </span>
+              Seneca College of Applied Arts and Technology
+              <span class="gre">
+                &#60;&#47;li&#62;
+              </span>
+            </li>
+            <li>
+              <span class="gre">
+                &#60;li&#62;
+              </span>
+              Independent Illustration
+              <span class="gre">
+                &#60;&#47;li&#62;
+              </span>
+            </li>
+            <li>
+              <span class="gre">
+                &#60;li&#62;
+              </span>
+              2011
+              <span class="gre">
+                &#60;&#47;li&#62;
+              </span>
+            </li>
+          </ul>
+          <!-- .about__ul -->
+          <ul class="about__ul">
+            <li>
+              <span class="gre">
+                &#60;li&#62;
+              </span>
+              Eastern Michigan University
+              <span class="gre">
+                &#60;&#47;li&#62;
+              </span>
+            </li>
+            <li>
+              <span class="gre">
+                &#60;li&#62;
+              </span>
+              Bachelor of Fine Arts <em>cum laude</em>
+              <span class="gre">
+                &#60;&#47;li&#62;
+              </span>
+            </li>
+            <li>
+              <span class="gre">
+                &#60;li&#62;
+              </span>
+              2005
+              <span class="gre">
+                &#60;&#47;li&#62;
+              </span>
+            </li>
+          </ul>
+          <!-- .about__ul -->
+        </div>
+        <!-- .about__div--edu -->
 
-			<p class="about__p">
-				<span class="gre">
-					&#60;p&#62;
-				</span>
-				I am a Toronto-based front-end developer with a strong entrepreneurial background, excellent communication skills and a love for the creative and problem-solving aspects of coding. Technology and the arts have always been my twin passions; while working as an independent art and design professional I increasingly found myself making excuses to spend time writing code, until I finally realized that is how I really want to be spending my days.
-				<span class="gre">
-					&#60;&#47;p&#62;
-				</span>
-			</p><!-- .about__p -->
+        <p class="about__p">
+          <span class="gre">
+            &#60;p&#62;
+          </span>
+          From old and faithful to shiny and new, these are a few of my favourite things:
+          <span class="gre">
+            &#60;&#47;p&#62;
+          </span>
+        </p>
+        <!-- .about__p -->
+        <ul class="devicons">
+          <li><i class="devicon devicon-gulp-plain colored"></i></li>
+          <li><i class="devicon devicon-chrome-plain colored"></i></li>
+          <li><i class="devicon devicon-ubuntu-plain colored"></i></li>
+          <li><i class="devicon devicon-html5-plain colored"></i></li>
+          <li><i class="devicon devicon-git-plain colored"></i></li>
+          <li><i class="devicon devicon-firefox-plain colored"></i></li>
+          <li><i class="devicon devicon-illustrator-plain colored"></i></li>
+          <li><i class="devicon devicon-javascript-plain colored"></i></li>
+          <li><i class="devicon devicon-react-original colored"></i></li>
+          <li><i class="devicon devicon-photoshop-plain colored"></i></li>
+          <li><i class="devicon devicon-css3-plain colored"></i></li>
+          <li><i class="devicon devicon-jquery-plain colored"></i></li>
+          <li><i class="devicon devicon-visualstudio-plain colored"></i></li>
+          <li><i class="devicon devicon-sass-original colored"></i></li>
+          <li><i class="devicon devicon-gimp-plain colored"></i></li>
+          <li><i class="devicon devicon-github-plain colored"></i></li>
+          <li><i class="devicon devicon-linux-plain colored"></i></li>
+          <li><i class="devicon devicon-inkscape-plain colored"></i></li>
+        </ul>
+        <!-- .devicons -->
+      </section>
+      <!-- .section__about #about -->
 
-			<p class="about__p">
-				<span class="gre">
-					&#60;p&#62;
-				</span>
-				I am currently looking for a team which will benefit from my diverse skillset, where I will be supported and challenged to meet my full potential. If you would like to talk opportunities or find out more about what I can do for you, please<a href="#contact"><span class="gre">&#123; </span>contact me<span class="gre"> &#125;</span></a>!
-				<span class="gre">
-					&#60;&#47;p&#62;
-				</span>
-			</p><!-- .about__p -->
+      <section class="section__contact" id="contact">
+        <header class="section__head">
+          <h2>
+            <span class="gre">&#123; </span>
+            Contact Me
+            <span class="gre"> &#125;</span>
+            <span class="sub-head">Get in touch!</span>
+          </h2>
+        </header>
+        <!-- .section__head -->
 
-			<p class="about__p--edu">
-				Education:
-			</p><!-- .about__p -->
+        <div class="section__content">
+          <div class="contact__div">
+            <ul>
+              <li><h3>Email</h3></li>
+              <li>
+                <a href="mailto:jen@jensaxena.com">
+                  <i class="fa fa-envelope-o fa-fw ora" aria-hidden="true"></i>
+                  jen@jensaxena.com
+                </a>
+              </li>
+            </ul>
 
-			<div class="about__div--edu">
-				<ul class="about__ul">
-					<li>
-						<span class="gre">
-							&#60;li&#62;
-						</span>
-						HackerYou College of Technology
-						<span class="gre">
-							&#60;&#47;li&#62;
-						</span>
-					</li>
-					<li>
-						<span class="gre">
-							&#60;li&#62;
-						</span>
-						Web Development Immersive
-						<span class="gre">
-							&#60;&#47;li&#62;
-						</span>
-					</li>
-					<li>
-						<span class="gre">
-							&#60;li&#62;
-						</span>
-						2017
-						<span class="gre">
-							&#60;&#47;li&#62;
-						</span>
-					</li>
-				</ul><!-- .about__ul -->
-				<ul class="about__ul">
-					<li>
-						<span class="gre">
-							&#60;li&#62;
-						</span>
-						Seneca College of Applied Arts and Technology
-						<span class="gre">
-							&#60;&#47;li&#62;
-						</span>
-					</li>
-					<li>
-						<span class="gre">
-							&#60;li&#62;
-						</span>
-						Independent Illustration
-						<span class="gre">
-							&#60;&#47;li&#62;
-						</span>
-					</li>
-					<li>
-						<span class="gre">
-							&#60;li&#62;
-						</span>
-						2011
-						<span class="gre">
-							&#60;&#47;li&#62;
-						</span>
-					</li>
-				</ul><!-- .about__ul -->
-				<ul class="about__ul">
-					<li>
-						<span class="gre">
-							&#60;li&#62;
-						</span>
-						Eastern Michigan University
-						<span class="gre">
-							&#60;&#47;li&#62;
-						</span>
-					</li>
-					<li>
-						<span class="gre">
-							&#60;li&#62;
-						</span>
-						Bachelor of Fine Arts <em>cum laude</em>
-						<span class="gre">
-							&#60;&#47;li&#62;
-						</span>
-					</li>
-					<li>
-						<span class="gre">
-							&#60;li&#62;
-						</span>
-						2005
-						<span class="gre">
-							&#60;&#47;li&#62;
-						</span>
-					</li>
-				</ul><!-- .about__ul -->
-			</div><!-- .about__div--edu -->
+            <ul>
+              <li><h3>Social</h3></li>
+              <li>
+                <a href="https://codepen.io/jensaxena/" aria-label="codepen">
+                  <i class="fa fa-codepen fa-fw" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/jensaxena" aria-label="github">
+                  <i class="fa fa-github fa-fw" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/jensaxena/" aria-label="instagram">
+                  <i class="fa fa-instagram fa-fw" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jensaxena/" aria-label="linkedin">
+                  <i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://medium.com/@jensaxena/" aria-label="medium">
+                  <i class="fa fa-medium fa-fw" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/jensaxena" aria-label="twitter">
+                  <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- .contact__ul--social -->
+          </div>
+          <!-- .contact__div -->
+        </div>
+        <!-- .section__content -->
+      </section>
+      <!-- .section__contact #contact -->
+    </main>
+    <!-- .wrapper -->
 
-			<a href="/public/assets/jen-saxena-resume-2018.pdf" class="button" download="jen-saxena-resume-2018.pdf" target="_blank">Download PDF Résumé</a>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
 
-			<p class="about__p">
-				<span class="gre">
-					&#60;p&#62;
-				</span>
-				I challenge myself every day to learn and grow. From old and faithful to shiny and new, these are a few of my favourite things:
-				<span class="gre">
-					&#60;&#47;p&#62;
-				</span>
-			</p><!-- .about__p -->
-			<ul class="devicons">
-				<li><i class="devicon devicon-gulp-plain colored"></i></li>
-				<li><i class="devicon devicon-chrome-plain colored"></i></li>
-				<li><i class="devicon devicon-ubuntu-plain colored"></i></li>
-				<li><i class="devicon devicon-html5-plain colored"></i></li>
-				<li><i class="devicon devicon-git-plain colored"></i></li>
-				<li><i class="devicon devicon-firefox-plain colored"></i></li>
-				<li><i class="devicon devicon-illustrator-plain colored"></i></li>
-				<li><i class="devicon devicon-javascript-plain colored"></i></li>
-				<li><i class="devicon devicon-react-original colored"></i></li>
-				<li><i class="devicon devicon-photoshop-plain colored"></i></li>
-				<li><i class="devicon devicon-css3-plain colored"></i></li>
-				<li><i class="devicon devicon-jquery-plain colored"></i></li>
-				<li><i class="devicon devicon-visualstudio-plain colored"></i></li>
-				<li><i class="devicon devicon-sass-original colored"></i></li>
-				<li><i class="devicon devicon-gimp-plain colored"></i></li>
-				<li><i class="devicon devicon-github-plain colored"></i></li>
-				<li><i class="devicon devicon-linux-plain colored"></i></li>
-				<li><i class="devicon devicon-inkscape-plain colored"></i></li>
-			</ul><!-- .devicons -->
-		</section><!-- .section__about #about -->
-
-		<section class="section__work" id="work">
-			<header class="section__head">
-				<h2>
-					<span class="gre">&#123; </span>
-					My Work
-					<span class="gre"> &#125;</span>
-				</h2>
-			</header><!-- .section__head -->
-
-			<div class="section__content">
-				<aside class="aside__work">
-					<ul>
-						<li class="aside__work--title" id="work-title">Click on a project for more information:</li>
-						<li class="aside__work--content" id="work-content"></li>
-						<ul class="aside__work--tags" id="work-tags"></ul>
-						<li class="aside__work--link" id="work-link"></li>
-					</ul>
-				</aside><!-- .aside__work -->
-
-				<div class="work__div--gallery" id="gallery">
-					<figure id="the-haps">
-						<img src="/public/images/screen-haps-mon-780x492.png" alt="a widescreen monitor displaying a webpage screenshot"/>
-						<figcaption>
-							<i class="fa fa-plus fa-fw" aria-hidden="true"></i>
-						</figcaption>
-					</figure><!-- #the-haps -->
-					<figure id="tarot-game">
-						<img src="/public/images/screen-tarot-mon-780x492.png" alt="a widescreen monitor displaying a webpage screenshot"/>
-						<figcaption>
-							<i class="fa fa-plus fa-fw" aria-hidden="true"></i>
-						</figcaption>
-					</figure><!-- #tarot-game -->
-					<figure id="get-help">
-						<img src="/public/images/screen-idea-mon-780x492.png" alt="a widescreen monitor displaying a webpage screenshot"/>
-						<figcaption>
-							<i class="fa fa-plus fa-fw" aria-hidden="true"></i>
-						</figcaption>
-					</figure><!-- #get-help -->
-					<figure id="death-oracle">
-						<img src="/public/images/screen-oracle-mon-780x492.png" alt="a widescreen monitor displaying a webpage screenshot"/>
-						<figcaption>
-							<i class="fa fa-plus fa-fw" aria-hidden="true"></i>
-						</figcaption>
-					</figure><!-- #death-oracle -->
-					<figure id="cyber-space-synth">
-						<img src="/public/images/screen-synth-mon-780x492.png" alt="a widescreen monitor displaying a webpage screenshot"/>
-						<figcaption>
-							<i class="fa fa-plus fa-fw" aria-hidden="true"></i>
-						</figcaption>
-					</figure><!-- #cyber-space-synth -->
-					<figure id="beat-box">
-						<img src="/public/images/screen-beat-mon-780x492.png" alt="a widescreen monitor displaying a webpage screenshot"/>
-						<figcaption>
-							<i class="fa fa-plus fa-fw" aria-hidden="true"></i>
-						</figcaption>
-					</figure><!-- #beat-box -->
-					<figure id="art-port">
-						<img src="/public/images/screen-art-mon-780x492.png" alt="a widescreen monitor displaying a webpage screenshot"/>
-						<figcaption>
-							<i class="fa fa-plus fa-fw" aria-hidden="true"></i>
-						</figcaption>
-					</figure><!-- #art-port -->
-
-				</div><!-- .work__div--gallery #gallery -->
-			</div><!-- .section__content -->
-
-			<button type="button" name="back" id="back">
-				Back
-			</button>
-			<button type="button" name="next" id="next">
-				Next
-			</button>
-
-		</section><!-- .section__work #work -->
-
-		<section class="section__contact" id="contact">
-			<header class="section__head">
-				<h2>
-					<span class="gre">&#123; </span>
-					Contact Me
-					<span class="gre"> &#125;</span>
-					<span class="sub-head">Get in touch!</span>
-				</h2>
-			</header><!-- .section__head -->
-
-			<div class="section__content">
-				<form action="http://code.jensaxena.com/formtools/process.php" id="contactMe" method="post" name="contactMe">
-					<input type="hidden" name="form_tools_form_id" value="1" />
-					<label for="name" class="visually-hidden">Enter your name</label>
-					<input type="text" name="name" id="name" placeholder="_NAME*">
-					<label for="email" class="visually-hidden">Enter your email address</label>
-					<input type="email" name="email" id="email" placeholder="_EMAIL*">
-					<label for="message" class="visually-hidden">Enter a message here</label>
-					<textarea name="message" id="message" cols="50" rows="10" placeholder="_MESSAGE*"></textarea>
-					<label for="name" class="visually-hidden">Send your email</label>
-					<button type="submit" name="submit" id="submit">Send Mail</button>
-				</form>
-
-				<div class="contact__div">
-					<h3>Quick Links</h3>
-					<ul>
-						<li>
-							<a href="tel:14165274516">
-								<i class="fa fa-phone fa-fw ora" aria-hidden="true"></i>
-								1-416-527-4516</a>
-						</li>
-						<li>
-							<a href="mailto:jen@jensaxena.com">
-								<i class="fa fa-envelope-o fa-fw ora" aria-hidden="true"></i>
-								jen@jensaxena.com
-							</a>
-						</li>
-					</ul>
-
-					<h3>Social Media</h3>
-					<ul class="contact__ul--social">
-						<li>
-							<a href="https://codepen.io/jensaxena/">
-								<i class="fa fa-codepen fa-fw" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/jensaxena">
-								<i class="fa fa-github fa-fw" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.instagram.com/jensaxena/">
-								<i class="fa fa-instagram fa-fw" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/jensaxena/">
-								<i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://medium.com/@jensaxena/">
-								<i class="fa fa-medium fa-fw" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/jensaxena">
-								<i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
-							</a>
-						</li>
-					</ul><!-- .contact__ul--social -->
-				</div><!-- .contact__div -->
-
-			</div><!-- .section__content -->
-		</section><!-- .section__contact #contact -->
-
-	</main><!-- .wrapper -->
-
-	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-
-	<script src="/public/scripts/script.js"></script>
-</body>
+    <script src="/public/scripts/script.js"></script>
+  </body>
 </html>
